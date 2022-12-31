@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Layout from './pages/Layout';
+import MainPage from './pages/MainPage';
+
+import './App.css';
+import CodePortfolio from './pages/CodePortfolio';
+import DesignPortfolio from './pages/DesignPortfolio';
+import BartendingPortfolio from './pages/BartendingPortfolio';
+import Resume from './pages/Resume';
+import Splash from './pages/Splash';
+
+export default function App() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Splash />}></Route>
+                <Route path="/" element={<Layout />}>
+                    {/* <Route index element={<Splash />} /> */}
+                    <Route path="codeportfolio" element={<CodePortfolio />} />
+                    <Route path="designportfolio" element={<DesignPortfolio />} />
+                    <Route path="bartendingportfolio" element={<BartendingPortfolio />} />
+                    <Route path="resume" element={<Resume />} />
+                    {/* <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} /> */}
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
-export default App;
+ReactDOM.render(<App />, document.getElementById('root'));

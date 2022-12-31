@@ -1,0 +1,65 @@
+[
+    {
+        "name": "HotSpot Design",
+        "imgSlug": "hotspotDesign",
+        "blurb": "ooiejfo ao jeaoje aj eoijaoijoijoiaj ao joi jaoj oiaj jeijjijoija ioj ",
+        "type": "UI",
+        "skills": ["Figma", "Prototyping", "Mobile Design"]
+    },
+    {
+        "name": "Aidan's Birthday Poster",
+        "imgSlug": "aidanbirthday",
+        "blurb": "jaoefoajioe",
+        "type": "Graphic",
+        "skills": ["Adobe Illustrator", "Adobe Photoshop", "Colors"]
+    },
+    {
+        "name": "Inside Out Radio Station",
+        "imgSlug": "insideOutRadio",
+        "blurb": "This was an exercise...",
+        "type": "Architecture",
+        "skills": [
+            "Rhino Modelling",
+            "Adobe Illustrator",
+            "Adobe InDesign",
+            "Laser Cutting",
+            "Physical Modelling",
+            "Prototyping"
+        ]
+    },
+    {
+        "name": "Social System Chair",
+        "imgSlug": "socialSystemChair",
+        "blurb": "jaoefoajioe",
+        "type": "Architecture",
+        "skills": ["Rhino Modelling", "Adobe Illustrator", "Adobe InDesign"]
+    },
+    {
+        "name": "Formal Invite Poster",
+        "imgSlug": "formalInvite",
+        "blurb": "jaoefoajioe",
+        "type": "Graphic",
+        "skills": ["Adobe Illustrator"]
+    },
+    {
+        "name": "Personal Website",
+        "imgSlug": "personalWebsite",
+        "blurb": "jaoefoajioe",
+        "type": "UI",
+        "skills": ["Figma", "Prototyping", "Colors"]
+    },
+    {
+        "name": "Superlative Website",
+        "imgSlug": "superlatives",
+        "blurb": "jaoefoajioe",
+        "type": "UI",
+        "skills": ["Figma", "Prototyping", "Colors"]
+    },
+    {
+        "name": "Performative Technology",
+        "imgSlug": "performativeTechnology",
+        "blurb": "jaoefoajioe",
+        "type": "Architecture",
+        "skills": ["Rhino Modelling", "Adobe Illustrator", "Laser Cutting", "Physical Modelling"]
+    }
+]

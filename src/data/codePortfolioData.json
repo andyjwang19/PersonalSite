@@ -1,0 +1,21 @@
+[
+    {
+        "name": "HotSpot",
+        "imgSlug": "hotspot",
+        "blurb": "This app",
+        "skills": [
+            "React",
+            "React-Native",
+            "Implementing Design",
+            "Typescript",
+            "MapView",
+            "Expo SDK"
+        ]
+    },
+    {
+        "name": "Personal Website",
+        "imgSlug": "personalwebsite",
+        "blurb": "This app",
+        "skills": ["React", "Implementing Design", "Typescript", "Tailwind CSS", "HTML/CSS"]
+    }
+]
