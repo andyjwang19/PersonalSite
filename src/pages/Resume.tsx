@@ -21,7 +21,7 @@ export default function Resume() {
     return (
         <div className="flex w-screen flex-grow flex-row items-center bg-background-lavender">
             <div className="sticky h-full w-[700px]">
-                <div className="fixed mt-6 ml-2 origin-top-right -translate-x-full -rotate-90 font-sans text-[200px] font-bold leading-none tracking-tighter">
+                <div className="fixed mt-6 ml-2 origin-top-right -translate-x-full -rotate-90 font-sans text-[160px] font-bold leading-none tracking-tighter">
                     RESUME
                 </div>
                 <div className="fixed ml-60 flex flex-col">
@@ -47,12 +47,14 @@ export default function Resume() {
             </div>
             <div className="mt-[60px] flex grow flex-col items-center ">
                 <img src={images.get('resume')}></img>
-                <div
+                <a
                     className="mt-6 h-[50px] w-[230px] bg-header-orange pt-1 text-center font-sans text-4xl font-bold tracking-tighter text-black drop-shadow-heavy"
-                    onClick={onButtonClick}
+                    href="https://github.com/andyjwang19/Resume/blob/main/23_resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     download pdf
-                </div>
+                </a>
                 <div className="h-[60px]" />
             </div>
         </div>

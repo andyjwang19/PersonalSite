@@ -76,9 +76,12 @@ function Header() {
                         </div>
                     ) : null}
                 </div>
-                <a className="flex h-full items-center font-sans text-[32px] font-bold" href="/">
+                <Link
+                    className="flex h-full items-center font-sans text-[32px] font-bold"
+                    to="/contact"
+                >
                     <div className="pl-[40px] pr-[70px] ">CONTACT</div>
-                </a>
+                </Link>
             </div>
         </div>
     );

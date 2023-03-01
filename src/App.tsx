@@ -11,6 +11,7 @@ import DesignPortfolio from './pages/DesignPortfolio';
 import BartendingPortfolio from './pages/BartendingPortfolio';
 import Resume from './pages/Resume';
 import Splash from './pages/Splash';
+import Contact from './pages/Contact';
 
 export default function App() {
     return (
@@ -26,6 +27,7 @@ export default function App() {
                     <Route path="designportfolio" element={<DesignPortfolio />} />
                     <Route path="bartendingportfolio" element={<BartendingPortfolio />} />
                     <Route path="resume" element={<Resume />} />
+                    <Route path="contact" element={<Contact />} />
                 </Route>
             </Routes>
         </BrowserRouter>

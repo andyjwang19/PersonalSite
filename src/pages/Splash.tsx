@@ -84,9 +84,11 @@ export default function Splash() {
                             PORTFOLIOS
                         </div>
                     </Link>
-                    <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy transition duration-150 ease-in-out hover:scale-110">
-                        CONTACT
-                    </div>
+                    <Link to="/contact">
+                        <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy transition duration-150 ease-in-out hover:scale-110">
+                            CONTACT
+                        </div>
+                    </Link>
                 </div>
             </div>
             {/* self blurb */}
@@ -111,7 +113,7 @@ export default function Splash() {
                     Agency and as the Recruiting Director of WKCR Radio. I am a member of the Design
                     team for RATROCK, the Arts Magazine at Columbia, as well as the Design director
                     for the Music Industry at Columbia Club. I also spend a day each weekend working
-                    as a Sous Chef for Baci, a Supper Club started by students, for students!
+                    as a Sous Chef for Baci, a Supper Club started by students, for students.
                 </p>
             </div>
         </div>
