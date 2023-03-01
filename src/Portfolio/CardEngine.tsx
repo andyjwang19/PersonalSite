@@ -1,5 +1,7 @@
+import { url } from 'inspector';
+
 interface CardEngineProps {
-    data: { name: string; imgSlug: string; blurb: string }[];
+    data: { name: string; imgSlug: string; blurb: string; url?: string }[];
 }
 
 enum cardSizes {
@@ -9,8 +11,8 @@ enum cardSizes {
     None,
 }
 enum cardSizeBreakpoints {
-    Small = 190,
-    Medium = 440,
+    Small = 260,
+    Medium = 400,
     Large = 900,
 }
 
@@ -35,6 +37,7 @@ const patterns = [
 ];
 
 function generateLayout(dataSizes: cardSizes[]): number[][] {
+    // TO ADD: if Large cannot be found should replace with a med, etc.
     const chosen = Array<number>(dataSizes.length).fill(0);
     const layout = Array<Array<number>>();
 
@@ -44,11 +47,27 @@ function generateLayout(dataSizes: cardSizes[]): number[][] {
         //choose a layout
         const rowPattern = patterns[patternIdx];
 
-        const res = rowPattern.map((size) => {
+        const res = rowPattern.flatMap((size) => {
             // loop thru dataSizes, look for size
             const foundIdx = dataSizes.findIndex(
-                (portSize, idx) => portSize == size && chosen[idx] == 0
+                (portSize, idx) => portSize === size && chosen[idx] === 0
             );
+            // if no larges found, when necessary
+            if (foundIdx === -1 && size === cardSizes.Large) {
+                const medFoundIdx = dataSizes.findIndex(
+                    (portSize, idx) => portSize === cardSizes.Medium && chosen[idx] === 0
+                );
+                const smallFoundIdx = dataSizes.findIndex(
+                    (portSize, idx) => portSize === cardSizes.Small && chosen[idx] === 0
+                );
+                if (medFoundIdx !== -1) {
+                    chosen[medFoundIdx] = 1;
+                }
+                if (smallFoundIdx !== -1) {
+                    chosen[smallFoundIdx] = 1;
+                }
+                return [medFoundIdx, smallFoundIdx];
+            }
             // doesn't not consider if the layout is not completely fullfilled
             if (foundIdx !== -1) {
                 chosen[foundIdx] = 1;
@@ -100,11 +119,17 @@ export default function CardEngine({ data }: CardEngineProps) {
                                     ? 'w-1/3'
                                     : 'w-1/2';
                             return (
-                                <div
-                                    className={`m-2 h-96 whitespace-normal break-words rounded-lg bg-white p-2 font-sans font-medium ${adj}`}
+                                <a
+                                    className={`m-2 h-96 whitespace-normal break-words rounded-lg bg-white/50 p-2 font-sans font-medium transition duration-300 ease-in-out hover:scale-[1.03] hover:border-2 hover:border-stone-600 hover:bg-white/90 hover:p-1.5 ${adj}`}
+                                    href={rowData[idx].url}
+                                    target="_blank"
+                                    rel="noreferrer"
                                 >
+                                    <div className="mb-2 text-center font-sans text-2xl tracking-tighter">
+                                        {rowData[idx].name}
+                                    </div>
                                     {rowData[idx].blurb}
-                                </div>
+                                </a>
                             );
                         })}
                     </div>

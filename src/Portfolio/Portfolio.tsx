@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
 
 import Card from '../Portfolio/Card';
-import codePortfolioData from '../data/codePortfolioData.json';
 import CardEngine from './CardEngine';
 
 interface PortfolioProps {
     name: string;
     filters: string[];
     blurb: string;
-    data: { name: string; imgSlug: string; blurb: string }[];
+    data: { name: string; imgSlug: string; blurb: string; url?: string }[];
 }
 
 export default function CodePortfolio({ name, filters, blurb, data }: PortfolioProps) {
@@ -46,16 +45,7 @@ export default function CodePortfolio({ name, filters, blurb, data }: PortfolioP
             </div>
             <p className="mb-12 w-[500px] text-center font-sans text-xl font-medium">{blurb}</p>
             <div className="w-full ">
-                <CardEngine data={codePortfolioData} />
-                {/* {data.map((d) => {
-                    return (
-                        <Card
-                            name={d.name.toUpperCase()}
-                            blurb={d.blurb}
-                            projectImageSlug={d.imgSlug}
-                        />
-                    );
-                })} */}
+                <CardEngine data={data} />
             </div>
         </div>
     );

@@ -6,7 +6,7 @@ export default function DesignPortfolio() {
         <Portfolio
             name={'Design'}
             filters={['architecture', 'graphic', 'ui']}
-            blurb={`
+            blurb={` UNDER CONSTRUCTION, IMAGES ON THE WAY:
                 Welcome to my design portfolio! I have on display here all my projects that showcase
                 my technical skills and eye for design. Mainly, my technical skills lie in Figma,
                 the Adobe Suite including Illustrator and InDesign, and Rhino. This page will be

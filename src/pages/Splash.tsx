@@ -64,7 +64,10 @@ export default function Splash() {
                         start ? 'translate-y-0' : 'translate-y-[1000px]'
                     }`}
                 >
-                    <img src={andycutout} className={`absolute bottom-0 h-3/5`} />
+                    <img
+                        src={andycutout}
+                        className={`absolute bottom-0 h-3/5 transition duration-300 ease-in-out hover:scale-110 `}
+                    />
                 </div>
                 <div
                     className={`absolute bottom-[105px] left-[600px] flex h-[288px] w-12 flex-col justify-between transition-transform delay-[800ms] duration-[400ms]	ease-out	${
@@ -72,16 +75,16 @@ export default function Splash() {
                     }`}
                 >
                     <Link to="/resume">
-                        <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy">
+                        <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy transition duration-150 ease-in-out hover:scale-110">
                             RESUME
                         </div>
                     </Link>
                     <Link to="/codeportfolio">
-                        <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy">
+                        <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy transition duration-150 ease-in-out hover:scale-110">
                             PORTFOLIOS
                         </div>
                     </Link>
-                    <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy">
+                    <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy transition duration-150 ease-in-out hover:scale-110">
                         CONTACT
                     </div>
                 </div>
@@ -93,20 +96,22 @@ export default function Splash() {
                 }`}
             >
                 <div className="fixed z-10 h-16 w-full bg-gradient-to-b from-background-lavender to-transparent"></div>
-                <p className="mt-[56px] mr-[40px] mb-12 font-sans text-5xl font-bold">
+                <p className="mt-[56px] mr-[40px] mb-12 font-sans text-5xl font-semibold">
                     &emsp; Welcome to my page! My name is Andy Wang (he/him) and I am a current
                     Junior at Columbia University studying Computer Science and Anthropology,
-                    currently seeking a software engineering internship for the hot Summer of 2023.
-                    My academic interests include design, human cultures, and architecture. <br />
+                    currently seeking a software engineering internship for the Summer of 2023. My
+                    academic interests include design, human cultures, architecture, and frontend
+                    development. <br />
                     <br /> I’ve worked at IBM Red Hat, a wonderful startup called The Vendry, and
                     the Humans-and-Autonomy lab at Duke University. I’ve gained a lot of experience
                     in frontend and full-stack programming, including React, building a CICD
                     pipeline, and writing APIs. <br />
                     <br />
                     In my free time, I work as a freelance bartender with the Columbia Bartending
-                    Agency and as the Recruiting Director of WKCR Radio. I love to design,
-                    everything from UI mockups to architectural structures and graphic posters and
-                    t-shirts.
+                    Agency and as the Recruiting Director of WKCR Radio. I am a member of the Design
+                    team for RATROCK, the Arts Magazine at Columbia, as well as the Design director
+                    for the Music Industry at Columbia Club. I also spend a day each weekend working
+                    as a Sous Chef for Baci, a Supper Club started by students, for students!
                 </p>
             </div>
         </div>

@@ -8,7 +8,9 @@ export default function CodePortfolio() {
         <Portfolio
             name={'Code'}
             filters={['frontend', 'fullstack', 'mobile']}
-            blurb={'test'}
+            blurb={`UNDER CONSTRUCTION, IMAGES ON THE WAY:
+            This is a collection of all the software development and computer science work I have done. 
+            A lot of my experience lies in React and Typescript, writing frontend and full-stack code.`}
             data={codePortfolioData}
         />
     );

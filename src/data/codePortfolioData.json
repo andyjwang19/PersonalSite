@@ -3,6 +3,7 @@
         "name": "HotSpot",
         "imgSlug": "hotspot",
         "blurb": "I built this app from scratch, and from no knowledge of mobile development. From following best React practices learned from The Vendry, alongside numerous online tutorials, I built this using React Native and Expo Go for a final project for UI Design. This app collects suggestions and favorite places from your friends, sorts them based on several metrics before displaying them for the user to scroll through. This app implements ratings, reviews, and location data.",
+        "url": "https://github.com/andyjwang19/HotSpot",
         "skills": [
             "React",
             "React-Native",
@@ -16,6 +17,7 @@
         "name": "Personal Website",
         "imgSlug": "personalwebsite",
         "blurb": "This is the website you are currently on! I built this website using React and Typescript. I wanted to learn a new technology as well, so I decided to implement Tailwind CSS for styling. I set up a different node scripts, including a deploy script that automatically builds and publishes the changes onto Git Pages.",
+        "url": "https://github.com/andyjwang19/PersonalSite",
         "skills": ["React", "Implementing Design", "Typescript", "Tailwind CSS", "HTML/CSS"]
     },
     {
