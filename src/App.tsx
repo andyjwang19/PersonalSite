@@ -14,15 +14,19 @@ import Splash from './pages/Splash';
 
 export default function App() {
     return (
-        <BrowserRouter basename='PersonalSite'>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" element={<Splash />}></Route>
-                {/* <Route path="/" element={<Layout />}>
-                    <Route path="/codeportfolio" element={<CodePortfolio />} />
-                    <Route path="/designportfolio" element={<DesignPortfolio />} />
-                    <Route path="/bartendingportfolio" element={<BartendingPortfolio />} />
-                    <Route path="/resume" element={<Resume />} />
-                </Route> */}
+                {/* <Route path="/codeportfolio" element={<CodePortfolio/>} ></Route>
+                <Route path="/designportfolio" element={<DesignPortfolio />} />
+                <Route path="/bartendingportfolio" element={<BartendingPortfolio />} />
+                <Route path="/resume" element={<Resume />} /> */}
+                <Route path="/" element={<Layout />}>
+                    <Route path="codeportfolio" element={<CodePortfolio />} />
+                    <Route path="designportfolio" element={<DesignPortfolio />} />
+                    <Route path="bartendingportfolio" element={<BartendingPortfolio />} />
+                    <Route path="resume" element={<Resume />} />
+                </Route>
             </Routes>
         </BrowserRouter>
     );
