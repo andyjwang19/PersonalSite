@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/PersonalSite/static/css/main.d45b73bf.css",
-    "main.js": "/PersonalSite/static/js/main.e50068cb.js",
+    "main.css": "/PersonalSite/static/css/main.653ad45c.css",
+    "main.js": "/PersonalSite/static/js/main.f7fb9067.js",
     "static/js/787.5809834d.chunk.js": "/PersonalSite/static/js/787.5809834d.chunk.js",
+    "static/media/insideOutRadio.jpg": "/PersonalSite/static/media/insideOutRadio.a75d4c7feaf6da4754e6.jpg",
+    "static/media/lnyposter.png": "/PersonalSite/static/media/lnyposter.b697c84dbf988c2357ee.png",
+    "static/media/portfoliozine.png": "/PersonalSite/static/media/portfoliozine.c1357d54dacace8feece.png",
     "static/media/andycutout.png": "/PersonalSite/static/media/andycutout.bf998d8fe9cf691b1a8b.png",
+    "static/media/gotmilk.png": "/PersonalSite/static/media/gotmilk.fe4f876319aca64aef4a.png",
     "static/media/hotspotDesign.png": "/PersonalSite/static/media/hotspotDesign.9f35bc1a454b88f260a9.png",
     "static/media/andy.png": "/PersonalSite/static/media/andy.89672a37bc5f7239e7ea.png",
     "static/media/resume_22.png": "/PersonalSite/static/media/resume_22.0e6af4346d8fbdd4dd17.png",
     "index.html": "/PersonalSite/index.html",
-    "main.d45b73bf.css.map": "/PersonalSite/static/css/main.d45b73bf.css.map",
-    "main.e50068cb.js.map": "/PersonalSite/static/js/main.e50068cb.js.map",
+    "main.653ad45c.css.map": "/PersonalSite/static/css/main.653ad45c.css.map",
+    "main.f7fb9067.js.map": "/PersonalSite/static/js/main.f7fb9067.js.map",
     "787.5809834d.chunk.js.map": "/PersonalSite/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d45b73bf.css",
-    "static/js/main.e50068cb.js"
+    "static/css/main.653ad45c.css",
+    "static/js/main.f7fb9067.js"
   ]
 }
