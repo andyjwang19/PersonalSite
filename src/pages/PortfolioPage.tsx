@@ -21,8 +21,11 @@ function determineData(type: string) {
 
 export default function PortfolioPage() {
     const params = useParams();
-    if (params.type === undefined) {
-        return <div></div>;
+    if (
+        params.type === undefined ||
+        (params.type !== 'bartending' && params.type !== 'code' && params.type !== 'design')
+    ) {
+        return <div>404 -- wrong portfolio url</div>;
     }
     const { name, filters, blurb, entries } = determineData(params.type);
     return <Portfolio name={name} filters={filters} blurb={blurb} data={entries} />;
