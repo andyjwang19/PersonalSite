@@ -12,6 +12,7 @@ import BartendingPortfolio from './pages/BartendingPortfolio';
 import Resume from './pages/Resume';
 import Splash from './pages/Splash';
 import Contact from './pages/Contact';
+import Blog from './pages/Blog';
 
 export default function App() {
     return (
@@ -24,9 +25,11 @@ export default function App() {
                 <Route path="/resume" element={<Resume />} /> */}
                 <Route path="/" element={<Layout />}>
                     <Route path="codeportfolio" element={<CodePortfolio />} />
+                    {/* <Route path="testing/" element={<CodePortfolio />} /> */}
                     <Route path="designportfolio" element={<DesignPortfolio />} />
                     <Route path="bartendingportfolio" element={<BartendingPortfolio />} />
                     <Route path="resume" element={<Resume />} />
+                    <Route path="blog" element={<Blog />} />
                     <Route path="contact" element={<Contact />} />
                 </Route>
             </Routes>

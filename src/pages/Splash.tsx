@@ -79,7 +79,7 @@ export default function Splash() {
                             RESUME
                         </div>
                     </Link>
-                    <Link to="/codeportfolio">
+                    <Link to="/designportfolio">
                         <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy transition duration-150 ease-in-out hover:scale-110">
                             PORTFOLIOS
                         </div>
@@ -99,10 +99,10 @@ export default function Splash() {
             >
                 <div className="fixed z-10 h-16 w-full bg-gradient-to-b from-background-lavender to-transparent"></div>
                 <p className="mt-[56px] mr-[40px] mb-12 font-sans text-5xl font-semibold">
-                    &emsp; Welcome to my page! My name is Andy Wang (he/him) and I am a current
-                    Junior at Columbia University studying Computer Science and Anthropology,
-                    currently seeking a software engineering internship for the Summer of 2023. My
-                    academic interests include design, human cultures, architecture, and frontend
+                    &emsp; Welcome to my page! My name is Andy Wang and I am a current Junior at
+                    Columbia University studying Computer Science and Anthropology, currently
+                    seeking a software engineering internship for the Summer of 2023. My academic
+                    interests include design, human cultures, architecture, and frontend
                     development. <br />
                     <br /> I’ve worked at IBM Red Hat, a wonderful startup called The Vendry, and
                     the Humans-and-Autonomy lab at Duke University. I’ve gained a lot of experience

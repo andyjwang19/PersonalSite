@@ -1,8 +1,10 @@
 export default function Contact() {
     return (
         <div className="flex w-screen flex-grow flex-col items-center bg-background-lavender font-sans text-lg">
-            Unfortunately, this page is still under construction-- currently working on cooking up
-            something real cool. In the mean time, all my links are below:
+            <br></br>
+            <br></br>
+            Unfortunately, this page is still under construction-- currently working on cooking up a
+            real cool-looking page. In the meantime, all my links are below:
             <br></br>
             <a
                 className="font-bold"

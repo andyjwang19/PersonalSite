@@ -1,10 +1,28 @@
 [
     {
         "name": "HotSpot Design",
-        "imgSlug": "hotspotDesign",
         "blurb": "This design involved several iterations of prototyping and running user tests. I experimented with several versions, and ran them by groups of users. I landed on this final design, and made several mockups in Figma.",
         "type": "UI",
         "skills": ["Figma", "Prototyping", "Mobile Design"]
+    },
+    {
+        "name": "MIC Brand Refresh",
+        "blurb": "Upon entering the Music Industry at Columbia board as the Design Director, I met with the rest of the board to imagine a brand identity refresh. This club was the brainchild of the current president, so it was very important for me to preserve her passion and mission in the new design guidelines. This invovled creating a set of colors, fonts, and design styles that would work with the themes of the club.",
+        "type": "UI",
+        "skills": ["Adobe Illustrator", "Adobe InDesign", "Colors", "Social Media Marketing"]
+    },
+    {
+        "name": "Baci Brand Design",
+        "blurb": "Baci is the passion-project and senior thesis of the Head Chef, and required an immense amount of self-sacrifice and committment. Upon joining Baci, I noticed that there was little in the way of brand or concept. Thus, I created a logo and uniform for the supper club that preserved the personality of the head chef, remaining playful while takiing things very seriously.",
+        "type": "UI",
+        "skills": ["Adobe Illustrator", "Colors", "Social Media Marketing"]
+    },
+    {
+        "name": "Graphic Design Portfolio Zine",
+        "imgSlug": "portfoliozine",
+        "blurb": "I love zines, especially how a concept can be captured and performed in the bounds of sheets of folded-A4 paper. When it came time to collect a portfolio, I knew I didn't want to just submit a folder of loose work. I designed this zine to encapsulate and present my work with more intention than I could manage otherwise.",
+        "type": "Graphic",
+        "skills": ["Adobe Illustrator", "Colors", "Adobe InDesign"]
     },
     {
         "name": "Inside Out Radio Station",
@@ -29,7 +47,6 @@
     },
     {
         "name": "Social System Chair",
-        "imgSlug": "socialSystemChair",
         "blurb": "This was my first exploration into Architecture. In this project, I identified a social system in my personali life, that of the mailroom line that invovled two queues that crossed each other. I designed this chair to change up that social system, changing the intersection into a round-a-bout type interaction.",
         "type": "Architecture",
         "skills": ["Rhino Modelling", "Adobe Illustrator", "Adobe InDesign"]
@@ -37,13 +54,12 @@
     {
         "name": "Got Milk? Poster",
         "imgSlug": "gotmilk",
-        "blurb": "My purpose with this design was to embrace the generational trend toward a more absurdist humor and worldview. Technically, this was an exercise of logo-making and illustrative design.",
+        "blurb": "The purpose of this poster was as an exercise of logo-making and illustrative design.",
         "type": "Graphic",
         "skills": ["Adobe Illustrator"]
     },
     {
         "name": "Personal Website",
-        "imgSlug": "personalWebsite",
         "blurb": "I designed this website on Figma before developing and deploying it. Here, I worked on the most visually-appealing way to display information I was very familiar with.",
         "type": "UI",
         "skills": ["Figma", "Prototyping", "Colors"]

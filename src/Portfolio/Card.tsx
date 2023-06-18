@@ -1,30 +1,44 @@
+import { Link } from 'react-router-dom';
 import skills from '../Models/skills';
 import images from '../assets';
+import { cardSizes } from './CardEngine';
 
 interface CodeCardProps {
     name: string;
     // skills: skills[];
     blurb: string;
-    projectImageSlug: string;
+    imageSlug?: string;
+    url?: string;
+    size: cardSizes;
 }
 
-export default function Card({ name, blurb, projectImageSlug }: CodeCardProps) {
+export default function Card({ name, blurb, imageSlug, url, size }: CodeCardProps) {
+    const adj = size === cardSizes.Small ? 'w-1/6' : size === cardSizes.Medium ? 'w-1/3' : 'w-1/2';
+    const imgLocation =
+        size === cardSizes.Small
+            ? ''
+            : size === cardSizes.Medium
+            ? 'flex flex-row'
+            : 'flex flex-row';
+    const imgTopMargin = size === cardSizes.Small ? 'mb-2' : 'ml-2 mt-12';
     return (
-        // h-[662px]
-        <div className="ml-16 mr-16 mb-5 flex flex-row items-center rounded-2xl bg-black pb-16 pt-16 ">
-            <img
-                src={images.get(projectImageSlug)}
-                alt={projectImageSlug}
-                className="ml-[92px] w-64 bg-white"
-            />
-
-            <div className="flex h-full grow flex-col items-center ">
-                <div className="font-sans text-5xl font-medium text-white">{name}</div>
-                <p className="ml-7 mr-7 mt-14 w-[600px] text-center font-sans text-4xl font-medium text-white">
-                    {blurb}
-                </p>
+        <a
+            className={`m-2 h-96 whitespace-normal break-words rounded-lg bg-white/50 p-2 font-sans font-medium transition duration-300 ease-in-out hover:scale-[1.03] hover:border-2 hover:border-stone-600 hover:bg-white/90 hover:p-1.5 ${adj}`}
+            href={url}
+            target="_blank"
+            rel="noreferrer"
+        >
+            <div className="mb-2 text-center font-sans text-2xl tracking-tighter">{name}</div>
+            <div className={`h-full ${imgLocation}`}>
+                {/* <div className="flex w-screen flex-grow flex-col items-center bg-background-lavender"> */}
+                {imageSlug !== undefined ? (
+                    <img
+                        src={images.get(imageSlug as string)}
+                        className={`mx-auto ${imgTopMargin} h-48`}
+                    />
+                ) : null}
+                <div className="ml-4">{blurb}</div>
             </div>
-            <div className="mr-[34px] w-[320px] bg-white">SKILLS</div>
-        </div>
+        </a>
     );
 }

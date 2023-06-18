@@ -13,6 +13,7 @@ function Header() {
     const portfolioUnHoverStyle = 'flex h-full items-center font-sans text-[32px] font-bold';
     const portfolioHoverStyle =
         'flex h-full items-center font-sans text-[32px] font-bold bg-black text-white';
+    const portfolioAnimated = `flex h-full items-center font-sans text-[32px] transition ease-in-out duration:500 font-bold hover:bg-black hover:text-white`;
 
     return (
         <div className="sticky top-0 z-20 flex h-[95px] w-full	items-center justify-between border-b border-black bg-header-orange">
@@ -30,16 +31,19 @@ function Header() {
                     className="flex h-full items-center font-sans text-[32px] font-bold"
                     to="/resume"
                 >
-                    <div className="border-r border-black pt-[15px] pb-[15px] pl-[40px] pr-[40px] ">
+                    <div
+                        className={`border-r border-black pt-[15px] pb-[15px] pl-[20px] pr-[20px] `}
+                    >
                         RESUME
                     </div>
                 </Link>
                 <div className="z-50" onMouseLeave={() => setPortfolioHover(false)}>
                     <div
-                        className={portfolioHover ? portfolioHoverStyle : portfolioUnHoverStyle}
+                        className={portfolioAnimated}
+                        // portfolioHover ? portfolioHoverStyle : portfolioUnHoverStyle}
                         onMouseEnter={() => setPortfolioHover(true)}
                     >
-                        <div className="border-r border-black pt-[15px] pb-[15px] pl-[40px] pr-[40px] ">
+                        <div className="border-r border-black pt-[15px] pb-[15px] pl-[20px] pr-[20px] ">
                             PORTFOLIO
                         </div>
                     </div>
@@ -78,9 +82,17 @@ function Header() {
                 </div>
                 <Link
                     className="flex h-full items-center font-sans text-[32px] font-bold"
+                    to="/blog"
+                >
+                    <div className="border-r border-black pl-[20px] pr-[20px] pt-[15px] pb-[15px] ">
+                        BLOG
+                    </div>
+                </Link>
+                <Link
+                    className="flex h-full items-center font-sans text-[32px] font-bold"
                     to="/contact"
                 >
-                    <div className="pl-[40px] pr-[70px] ">CONTACT</div>
+                    <div className="pl-[20px] pr-[30px] ">CONTACT</div>
                 </Link>
             </div>
         </div>

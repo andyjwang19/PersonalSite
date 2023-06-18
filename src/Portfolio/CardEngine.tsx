@@ -1,18 +1,26 @@
 import { url } from 'inspector';
+import images from '../assets/index';
+import Card from './Card';
 
 interface CardEngineProps {
-    data: { name: string; imgSlug: string; blurb: string; url?: string }[];
+    data: { name: string; imgSlug?: string; blurb: string; url?: string }[];
 }
 
-enum cardSizes {
+export enum cardSizes {
     Small,
     Medium,
     Large,
     None,
 }
 enum cardSizeBreakpoints {
+    Small = 360,
+    Medium = 550,
+    Large = 900,
+}
+
+enum cardSizeImageBreakpoints {
     Small = 260,
-    Medium = 400,
+    Medium = 350,
     Large = 900,
 }
 
@@ -82,18 +90,32 @@ function generateLayout(dataSizes: cardSizes[]): number[][] {
 }
 
 export default function CardEngine({ data }: CardEngineProps) {
-    function generateDataSizes(data: string[]): cardSizes[] {
+    function generateDataSizes(data: { text: string; img: number }[]): cardSizes[] {
         return data.map((d) => {
-            if (d.length < cardSizeBreakpoints.Small) {
-                return cardSizes.Small;
+            if (d.img === 0) {
+                if (d.text.length < cardSizeBreakpoints.Small) {
+                    return cardSizes.Small;
+                }
+                if (d.text.length < cardSizeBreakpoints.Medium) {
+                    return cardSizes.Medium;
+                }
+                return cardSizes.Large;
+            } else {
+                if (d.text.length < cardSizeImageBreakpoints.Small) {
+                    return cardSizes.Small;
+                }
+                if (d.text.length < cardSizeImageBreakpoints.Medium) {
+                    return cardSizes.Medium;
+                }
+                return cardSizes.Large;
             }
-            if (d.length < cardSizeBreakpoints.Medium) {
-                return cardSizes.Medium;
-            }
-            return cardSizes.Large;
         });
     }
-    const dataSizes = generateDataSizes(data.map((d) => d.blurb));
+    const dataSizes = generateDataSizes(
+        data.map((d) => {
+            return { text: d.blurb, img: d.imgSlug !== undefined ? 1 : 0 };
+        })
+    );
     const layout = generateLayout(dataSizes);
 
     return (
@@ -112,24 +134,14 @@ export default function CardEngine({ data }: CardEngineProps) {
                 return (
                     <div className="mb-2 mt-2 flex w-full flex-row">
                         {pattern.map((p, idx) => {
-                            const adj =
-                                p === cardSizes.Small
-                                    ? 'w-1/6'
-                                    : p === cardSizes.Medium
-                                    ? 'w-1/3'
-                                    : 'w-1/2';
                             return (
-                                <a
-                                    className={`m-2 h-96 whitespace-normal break-words rounded-lg bg-white/50 p-2 font-sans font-medium transition duration-300 ease-in-out hover:scale-[1.03] hover:border-2 hover:border-stone-600 hover:bg-white/90 hover:p-1.5 ${adj}`}
-                                    href={rowData[idx].url}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <div className="mb-2 text-center font-sans text-2xl tracking-tighter">
-                                        {rowData[idx].name}
-                                    </div>
-                                    {rowData[idx].blurb}
-                                </a>
+                                <Card
+                                    name={rowData[idx].name}
+                                    blurb={rowData[idx].blurb}
+                                    imageSlug={rowData[idx].imgSlug}
+                                    url={rowData[idx].url}
+                                    size={p}
+                                />
                             );
                         })}
                     </div>

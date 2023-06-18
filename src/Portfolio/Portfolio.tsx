@@ -7,7 +7,7 @@ interface PortfolioProps {
     name: string;
     filters: string[];
     blurb: string;
-    data: { name: string; imgSlug: string; blurb: string; url?: string }[];
+    data: { name: string; imgSlug?: string; blurb: string; url?: string }[];
 }
 
 export default function CodePortfolio({ name, filters, blurb, data }: PortfolioProps) {
