@@ -52,7 +52,7 @@ function Header() {
                         <div className="absolute right-[164px] ">
                             <Link
                                 className="flex h-24 w-[467px] items-center border border-white bg-black"
-                                to="/designportfolio"
+                                to="/portfolio/design"
                                 onClick={() => setPortfolioHover(false)}
                             >
                                 <p className="ml-5 align-middle font-sans text-2xl font-bold text-white">
@@ -61,7 +61,7 @@ function Header() {
                             </Link>
                             <Link
                                 className="right-[164px] flex h-24 w-[467px] items-center border border-white bg-black"
-                                to="/codeportfolio"
+                                to="/portfolio/code"
                                 onClick={() => setPortfolioHover(false)}
                             >
                                 <p className="ml-5 align-middle font-sans text-2xl font-bold text-white">
@@ -70,7 +70,7 @@ function Header() {
                             </Link>
                             <Link
                                 className="right-[164px] flex h-24 w-[467px] items-center border border-white bg-black"
-                                to="/bartendingportfolio"
+                                to="/portfolio/bartending"
                                 onClick={() => setPortfolioHover(false)}
                             >
                                 <p className="ml-5 align-middle font-sans text-2xl font-bold text-white">

@@ -79,7 +79,7 @@ export default function Splash() {
                             RESUME
                         </div>
                     </Link>
-                    <Link to="/designportfolio">
+                    <Link to="/portfolio/design">
                         <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy transition duration-150 ease-in-out hover:scale-110">
                             PORTFOLIOS
                         </div>
