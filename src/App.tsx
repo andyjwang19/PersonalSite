@@ -18,15 +18,9 @@ export default function App() {
         <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" element={<Splash />}></Route>
-                {/* <Route path="/codeportfolio" element={<CodePortfolio/>} ></Route>
-                <Route path="/designportfolio" element={<DesignPortfolio />} />
-                <Route path="/bartendingportfolio" element={<BartendingPortfolio />} />
-                <Route path="/resume" element={<Resume />} /> */}
                 <Route path="/" element={<Layout />}>
                     <Route path="portfolio/:type" element={<PortfolioPage />} />
-                    {/* <Route path="codeportfolio" element={<CodePortfolio />} />
-                    <Route path="designportfolio" element={<DesignPortfolio />} />
-                    <Route path="bartendingportfolio" element={<BartendingPortfolio />} /> */}
+                    <Route path="portfolio/:type/:entryId" element={<InfoPage />} />
                     <Route path="resume" element={<Resume />} />
                     <Route path="blog" element={<Blog />} />
                     <Route path="contact" element={<Contact />} />

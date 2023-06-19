@@ -6,18 +6,14 @@
     },
     "entries": [
         {
+            "entryId": 1,
             "name": "Isha's Birthday Party",
-            "blurb": "The client wanted a 2000s themed birthday party, complete with 2000s styled drinks. I provided a menu of the most popular and well known drinks from the early 2000s, of which she selected five. I designed the menu in Adobe Illustrator, working with the client's vision. I provided the client with estimates on a complete shopping list for the event, which they purchased and provided. Overall this event was a blast!",
-            "data": {
-                "numPeople": 40
-            }
+            "blurb": "The client wanted a 2000s themed birthday party, complete with 2000s styled drinks. I provided a menu of the most popular and well known drinks from the early 2000s, of which she selected five. I designed the menu in Adobe Illustrator, working with the client's vision. I provided the client with estimates on a complete shopping list for the event, which they purchased and provided. Overall this event was a blast!"
         },
         {
+            "entryId": 2,
             "name": "Columbia Kappas-Lambdas Formal",
-            "blurb": "This event was an example of my drink making speed, having to cater to a large number of guests. The clients wanted a total of four bartenders, and I used my network to call on three fellow bartenders to join. Booking me also gives you access to my network of other capable bartenders.",
-            "data": {
-                "numPeople": 150
-            }
+            "blurb": "This event was an example of my drink making speed, having to cater to a large number of guests. The clients wanted a total of four bartenders, and I used my network to call on three fellow bartenders to join. Booking me also gives you access to my network of other capable bartenders."
         }
     ]
 }

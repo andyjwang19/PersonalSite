@@ -3,7 +3,7 @@ import images from '../assets/index';
 import Card from './Card';
 
 interface CardEngineProps {
-    data: { name: string; imgSlug?: string; blurb: string; url?: string }[];
+    data: { entryId: number; name: string; imgSlug?: string; blurb: string; url?: string }[];
 }
 
 export enum cardSizes {
@@ -136,6 +136,7 @@ export default function CardEngine({ data }: CardEngineProps) {
                         {pattern.map((p, idx) => {
                             return (
                                 <Card
+                                    entryId={rowData[idx].entryId}
                                     name={rowData[idx].name}
                                     blurb={rowData[idx].blurb}
                                     imageSlug={rowData[idx].imgSlug}

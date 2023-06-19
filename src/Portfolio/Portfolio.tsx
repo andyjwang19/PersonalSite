@@ -7,10 +7,10 @@ interface PortfolioProps {
     name: string;
     filters: string[];
     blurb: string;
-    data: { name: string; imgSlug?: string; blurb: string; url?: string }[];
+    data: { entryId: number; name: string; imgSlug?: string; blurb: string; url?: string }[];
 }
 
-export default function CodePortfolio({ name, filters, blurb, data }: PortfolioProps) {
+export default function Portfolio({ name, filters, blurb, data }: PortfolioProps) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
