@@ -9,6 +9,7 @@ export default function Blog() {
                 <div className="fixed mt-6 ml-2 origin-top-right -translate-x-full -rotate-90 font-sans text-[160px] font-bold leading-none tracking-tighter">
                     BLOG
                 </div>
+                <div className=""> UNDER CONSTRUCTION</div>
             </div>
             <div className="h-full w-32 "></div>
         </div>
