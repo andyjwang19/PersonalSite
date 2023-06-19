@@ -1,17 +1,46 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import images from '../assets';
-import { loadEntry } from '../loaders/PortfolioDataLoader';
+import dataApi from '../api/dataApi';
+import { PortfolioData } from '../Models/portfolio';
 
 export default function InfoPage() {
     const params = useParams();
+    const [entry, setEntry] = useState<PortfolioData>();
+    const [loading, setLoading] = useState(1);
+    const api = new dataApi();
     useEffect(() => {
         window.scrollTo(0, 0);
+        async function load() {
+            const entry = await api.getEntry(
+                params.type,
+                parseInt(params.entryId ? params.entryId : '')
+            );
+            if (entry === null) {
+                throw new Error('Invalid type or id');
+            }
+
+            setEntry(await entry.json());
+            setLoading(0);
+        }
+        if (!entry) {
+            load();
+        }
     }, []);
+    // const tmp = await api.getEntry(params.type, parseInt(params.entryId ? params.entryId : ''));
+    // if (tmp === null) {
+    //     throw new Error('Invalid type or id');
+    // }
 
-    const entry = loadEntry(params.type, parseInt(params.entryId ? params.entryId : ''));
-
-    if (entry === null) {
+    // const entry = await tmp.json();
+    if (loading) {
+        return (
+            <div className="flex h-screen w-screen justify-center bg-background-lavender font-sans font-bold">
+                LOADING...
+            </div>
+        );
+    }
+    if (entry === null || entry === undefined) {
         return <div> 404 Entry id does not exist</div>;
     }
     const firstWord = entry.name.split(' ')[0];
