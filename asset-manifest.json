@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/PersonalSite/static/css/main.653ad45c.css",
-    "main.js": "/PersonalSite/static/js/main.3d0d577d.js",
+    "main.css": "/PersonalSite/static/css/main.4aa8cb24.css",
+    "main.js": "/PersonalSite/static/js/main.6fac9aa4.js",
     "static/js/787.5809834d.chunk.js": "/PersonalSite/static/js/787.5809834d.chunk.js",
     "static/media/insideOutRadio.jpg": "/PersonalSite/static/media/insideOutRadio.a75d4c7feaf6da4754e6.jpg",
+    "static/media/placeholder.png": "/PersonalSite/static/media/placeholder.de0f4ba009366354102f.png",
     "static/media/lnyposter.png": "/PersonalSite/static/media/lnyposter.b697c84dbf988c2357ee.png",
     "static/media/portfoliozine.png": "/PersonalSite/static/media/portfoliozine.c1357d54dacace8feece.png",
     "static/media/andycutout.png": "/PersonalSite/static/media/andycutout.bf998d8fe9cf691b1a8b.png",
@@ -12,12 +13,12 @@
     "static/media/andy.png": "/PersonalSite/static/media/andy.89672a37bc5f7239e7ea.png",
     "static/media/resume_22.png": "/PersonalSite/static/media/resume_22.0e6af4346d8fbdd4dd17.png",
     "index.html": "/PersonalSite/index.html",
-    "main.653ad45c.css.map": "/PersonalSite/static/css/main.653ad45c.css.map",
-    "main.3d0d577d.js.map": "/PersonalSite/static/js/main.3d0d577d.js.map",
+    "main.4aa8cb24.css.map": "/PersonalSite/static/css/main.4aa8cb24.css.map",
+    "main.6fac9aa4.js.map": "/PersonalSite/static/js/main.6fac9aa4.js.map",
     "787.5809834d.chunk.js.map": "/PersonalSite/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.653ad45c.css",
-    "static/js/main.3d0d577d.js"
+    "static/css/main.4aa8cb24.css",
+    "static/js/main.6fac9aa4.js"
   ]
 }
