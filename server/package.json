@@ -4,13 +4,15 @@
     "description": "Server for my website, serves layout and data",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon server.js"
+        "dev": "nodemon server.js",
+        "server": "pm2 start server.js"
     },
     "author": "Andy Wang",
     "license": "ISC",
     "dependencies": {
         "body-parser": "~1.20.2",
-        "express": "~4.17.1"
+        "express": "~4.17.1",
+        "pm2": "~5.3.0"
     },
     "devDependencies": {
         "@types/express": "~4.17.1",
