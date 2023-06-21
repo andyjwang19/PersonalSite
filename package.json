@@ -58,5 +58,5 @@
         "prettier-plugin-tailwindcss": "~0.2.1",
         "tailwindcss": "~3.2.4"
     },
-    "proxy": "http://3.145.214.116:8000"
+    "proxy": "https://3.145.214.116:8000"
 }
