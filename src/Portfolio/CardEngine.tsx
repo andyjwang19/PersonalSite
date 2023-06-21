@@ -3,7 +3,7 @@ import images from '../assets/index';
 import Card from './Card';
 
 interface CardEngineProps {
-    data: { entryId: number; name: string; imgSlug?: string; blurb: string; url?: string }[];
+    data: { entryId: number; name: string; imgSlugs?: string[]; blurb: string; url?: string }[];
 }
 
 export enum cardSizes {
@@ -113,7 +113,7 @@ export default function CardEngine({ data }: CardEngineProps) {
     }
     const dataSizes = generateDataSizes(
         data.map((d) => {
-            return { text: d.blurb, img: d.imgSlug !== undefined ? 1 : 0 };
+            return { text: d.blurb, img: d.imgSlugs !== undefined ? 1 : 0 };
         })
     );
     const layout = generateLayout(dataSizes);
@@ -134,12 +134,13 @@ export default function CardEngine({ data }: CardEngineProps) {
                 return (
                     <div className="mb-2 mt-2 flex w-full flex-row">
                         {pattern.map((p, idx) => {
+                            const imageSlug = rowData[idx].imgSlugs;
                             return (
                                 <Card
                                     entryId={rowData[idx].entryId}
                                     name={rowData[idx].name}
                                     blurb={rowData[idx].blurb}
-                                    imageSlug={rowData[idx].imgSlug}
+                                    imageSlug={imageSlug ? imageSlug[0] : undefined}
                                     url={rowData[idx].url}
                                     size={p}
                                 />

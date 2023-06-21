@@ -9,7 +9,7 @@ export interface PortfolioData {
     blurb: string;
     url?: string;
     skills?: string[];
-    imgSlug?: string;
+    imgSlugs?: string[];
     type?: string;
 }
 

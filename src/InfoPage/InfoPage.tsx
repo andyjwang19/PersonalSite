@@ -62,16 +62,21 @@ export default function InfoPage() {
                     </div>
                 ) : null}
             </div>
-            <div className="mb-14 w-full flex-wrap font-sans text-[250px] font-medium leading-[12rem] tracking-[-0.1em]">
+            <div className="mb-14 w-full w-full flex-wrap object-fill font-sans text-[250px] font-medium leading-[12rem] tracking-[-0.1em]">
                 {remainingTitle}
             </div>
-            {entry.imgSlug ? (
-                <div className="mb-12">
-                    <img
-                        src={images.get(entry.imgSlug)}
-                        alt={entry.imgSlug}
-                        className="ml-[92px] w-2/6 bg-white"
-                    />
+            {entry.imgSlugs ? (
+                <div className="mb-12 inline flex w-full flex-row overflow-x-auto">
+                    {entry.imgSlugs.map((imgSlug) => {
+                        return (
+                            <img
+                                src={images.get(imgSlug)}
+                                alt={imgSlug}
+                                className="max-w-48 ml-[92px] max-h-96 flex-shrink-0 bg-white"
+                            />
+                        );
+                    })}
+                    <div className="w-[92px] flex-shrink-0"></div>
                 </div>
             ) : null}
             <div className="mr-40 mb-12 ml-40 font-sans text-3xl font-medium">{entry.blurb}</div>
