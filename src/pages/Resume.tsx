@@ -32,12 +32,12 @@ export default function Resume() {
                         the Portfolio section of this site.
                     </p>
                     <div className="mt-[61px] flex w-[370px] flex-row justify-between	">
-                        <Link className="" to="/codeportfolio">
+                        <Link className="" to="/portfolio/code">
                             <div className="h-[102px] w-[174px] bg-black pl-2 pt-2 font-sans text-4xl font-bold tracking-tighter text-white drop-shadow-heavy">
                                 code portfolio
                             </div>
                         </Link>
-                        <Link className="" to="/designportfolio">
+                        <Link className="" to="/portfolio/design">
                             <div className="h-[102px] w-[174px] bg-white pl-2 pt-2 font-sans text-4xl font-bold tracking-tighter text-black drop-shadow-heavy">
                                 design portfolio
                             </div>
@@ -46,10 +46,10 @@ export default function Resume() {
                 </div>
             </div>
             <div className="mt-[60px] flex grow flex-col items-center ">
-                <img src={images.get('resume')}></img>
+                <img className="mr-10 w-[750px]" src={images.get('resume')}></img>
                 <a
                     className="mt-6 h-[50px] w-[230px] bg-header-orange pt-1 text-center font-sans text-4xl font-bold tracking-tighter text-black drop-shadow-heavy"
-                    href="https://github.com/andyjwang19/Resume/blob/main/23_resume.pdf"
+                    href="https://github.com/andyjwang19/Resume/blob/main/wang_23_resume.pdf"
                     target="_blank"
                     rel="noreferrer"
                 >

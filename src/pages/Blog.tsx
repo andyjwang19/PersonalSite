@@ -6,49 +6,49 @@ function test() {
     return fetch('https://dog.ceo/api/breeds/image/random');
 }
 export default function Blog() {
-    const [data, setData] = useState(null);
-    const api = new dataApi();
+    // const [data, setData] = useState(null);
+    // const api = new dataApi();
 
-    useEffect(() => {
-        async function getDataLoaded() {
-            // const a = await api.getEntry('design', 3);
-            // if (a === null) {
-            //     throw new Error('type or id wrong');
-            // }
-            // // const a = api.get();
-            // const res = await (await a).json();
-            // console.log(res);
-            // // setData(res.info);
-            const a = await (await fetch('https://dog.ceo/api/breeds/image/random')).json();
-            setData(a.message);
-        }
-        if (!data) {
-            getDataLoaded();
-        }
-    }, []);
-
-    return (
-        <div className="App">
-            <header className="App-header">
-                <p>
-                    {'« '}
-                    <strong>{data}</strong>
-                    {' »'}
-                </p>
-            </header>
-        </div>
-    );
+    // useEffect(() => {
+    //     async function getDataLoaded() {
+    //         // const a = await api.getEntry('design', 3);
+    //         // if (a === null) {
+    //         //     throw new Error('type or id wrong');
+    //         // }
+    //         // // const a = api.get();
+    //         // const res = await (await a).json();
+    //         // console.log(res);
+    //         // // setData(res.info);
+    //         const a = await (await fetch('https://dog.ceo/api/breeds/image/random')).json();
+    //         setData(a.message);
+    //     }
+    //     if (!data) {
+    //         getDataLoaded();
+    //     }
+    // }, []);
 
     // return (
-    //     <div className="flex h-full w-screen flex-row justify-between bg-background-lavender">
-    //         <div className="h-full w-32 "></div>
-    //         <div className="h-full w-full ">
-    //             <div className="fixed mt-6 ml-2 origin-top-right -translate-x-full -rotate-90 font-sans text-[160px] font-bold leading-none tracking-tighter">
-    //                 BLOG
-    //             </div>
-    //             <div className=""> UNDER CONSTRUCTION</div>
-    //         </div>
-    //         <div className="h-full w-32 "></div>
+    //     <div className="App">
+    //         <header className="App-header">
+    //             <p>
+    //                 {'« '}
+    //                 <strong>{data}</strong>
+    //                 {' »'}
+    //             </p>
+    //         </header>
     //     </div>
     // );
+
+    return (
+        <div className="flex h-full w-screen flex-row justify-between bg-background-lavender">
+            <div className="h-full w-32 "></div>
+            <div className="h-full w-full ">
+                <div className="fixed mt-6 ml-2 origin-top-right -translate-x-full -rotate-90 font-sans text-[160px] font-bold leading-none tracking-tighter">
+                    BLOG
+                </div>
+                <div className=""> UNDER CONSTRUCTION</div>
+            </div>
+            <div className="h-full w-32 "></div>
+        </div>
+    );
 }
