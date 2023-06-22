@@ -3,6 +3,7 @@ const express = require('express');
 const https = require('https');
 const fs = require('fs');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const options = {
     key: fs.readFileSync('keys/client-key.pem'),
@@ -14,6 +15,7 @@ const app = express();
 const port = 8000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 const routes = require('./routes/routes.tsx')(app, fs);
 
 https.createServer(options, app).listen(port);

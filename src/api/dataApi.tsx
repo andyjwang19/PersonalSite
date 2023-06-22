@@ -2,7 +2,8 @@ import { IncomingMessage } from 'http';
 import { CompletePortfolio } from '../Models/portfolio';
 import { useCallback, useState } from 'react';
 
-const root = '/data';
+const root = 'https://localhost:8000';
+// const root = 'https://3.145.214.116:8000';
 export default class dataApi {
     constructor() {
         const path = `${root}`;
@@ -14,15 +15,17 @@ export default class dataApi {
         //     var request = client.request('PUT', '/users/1');
         //     fetch('localhost:8000').then(response => response.json())
         //     .then((data)=> {console.log(data); setEnvironmentData()})
-        return fetch('/api');
+        return fetch(`${root}/api`);
     }
 
-    getPortfolio(type?: string) {
+    async getPortfolio(type?: string) {
         //Promise<{ portfolio: CompletePortfolio }> {
         if (!type) {
             return null;
         }
-        return fetch(`/portfolio/${type}`);
+        const tmp = await fetch(`${root}/portfolio/${type}`);
+        console.log(`tmp`, tmp);
+        return tmp;
         // const response = await fetch(`/`);
         // const data = await response.json();
         // console.log(`data . info ${data.info}`);
@@ -32,6 +35,6 @@ export default class dataApi {
         if (!type || !entryId) {
             return null;
         }
-        return fetch(`/portfolio/${type}/${entryId}`);
+        return fetch(`${root}/portfolio/${type}/${entryId}`);
     }
 }
