@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import dataApi from '../api/dataApi';
 
 function test() {
-    return fetch('/api');
+    return fetch('https://dog.ceo/api/breeds/image/random');
 }
 export default function Blog() {
     const [data, setData] = useState(null);
@@ -11,14 +11,16 @@ export default function Blog() {
 
     useEffect(() => {
         async function getDataLoaded() {
-            const a = await api.getEntry('design', 3);
-            if (a === null) {
-                throw new Error('type or id wrong');
-            }
-            // const a = api.get();
-            const res = await (await a).json();
-            console.log(res);
-            // setData(res.info);
+            // const a = await api.getEntry('design', 3);
+            // if (a === null) {
+            //     throw new Error('type or id wrong');
+            // }
+            // // const a = api.get();
+            // const res = await (await a).json();
+            // console.log(res);
+            // // setData(res.info);
+            const a = await (await fetch('https://dog.ceo/api/breeds/image/random')).json();
+            setData(a.message);
         }
         if (!data) {
             getDataLoaded();

@@ -2,8 +2,8 @@ import { IncomingMessage } from 'http';
 import { CompletePortfolio } from '../Models/portfolio';
 import { useCallback, useState } from 'react';
 
-const root = 'https://localhost:8000';
-// const root = 'https://3.145.214.116:8000';
+// const root = 'https://localhost:8000';
+const root = 'https://cors-anywhere.herokuapp.com/http://3.145.214.116:8000';
 export default class dataApi {
     constructor() {
         const path = `${root}`;
