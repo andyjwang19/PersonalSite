@@ -99,21 +99,22 @@ export default function Splash() {
             >
                 <div className="fixed z-10 h-16 w-full bg-gradient-to-b from-background-lavender to-transparent"></div>
                 <p className="mt-[56px] mr-[40px] mb-12 font-sans text-5xl font-semibold">
-                    &emsp; Welcome to my page! My name is Andy Wang and I am a current Junior at
+                    &emsp; Welcome to my page! My name is Andy Wang and I am a current senior at
                     Columbia University studying Computer Science and Anthropology, currently
-                    seeking a software engineering internship for the Summer of 2023. My academic
+                    seeking a software engineering internship for the Summer of 2024. My academic
                     interests include design, human cultures, architecture, and frontend
                     development. <br />
-                    <br /> I’ve worked at IBM Red Hat, a wonderful startup called The Vendry, and
-                    the Humans-and-Autonomy lab at Duke University. I’ve gained a lot of experience
-                    in frontend and full-stack programming, including React, building a CICD
-                    pipeline, and writing APIs. <br />
+                    <br /> I’ve worked at IBM Red Hat, a wonderful startup called The Vendry, a
+                    agile startup team at Shade, and the Humans-and-Autonomy lab at Duke University.
+                    I’ve gained a lot of experience in frontend and full-stack programming,
+                    including React, building a CICD pipeline, and writing APIs. <br />
                     <br />
                     In my free time, I work as a freelance bartender with the Columbia Bartending
-                    Agency and as the Recruiting Director of WKCR Radio. I am a member of the Design
-                    team for RATROCK, the Arts Magazine at Columbia, as well as the Design director
-                    for the Music Industry at Columbia Club. I also spend a day each weekend working
-                    as a Sous Chef for Baci, a Supper Club started by students, for students.
+                    Agency and as the Recruiting Director of WKCR Radio. I work on graphic design
+                    for RATROCK, the Arts Magazine at Columbia, as well as act as the Design
+                    director for the Music Industry at Columbia Club. I also spend a day each
+                    weekend working as a Sous Chef for Baci, a Supper Club started by students, for
+                    students.
                 </p>
             </div>
         </div>

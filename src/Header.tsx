@@ -80,14 +80,14 @@ function Header() {
                         </div>
                     ) : null}
                 </div>
-                <Link
+                {/* <Link
                     className="flex h-full items-center font-sans text-[32px] font-bold"
                     to="/blog"
                 >
                     <div className="border-r border-black pl-[20px] pr-[20px] pt-[15px] pb-[15px] ">
                         BLOG
                     </div>
-                </Link>
+                </Link> */}
                 <Link
                     className="flex h-full items-center font-sans text-[32px] font-bold"
                     to="/contact"

@@ -1,6 +1,7 @@
 import andy from './andy.png';
 import hotspotDesign from './hotspotDesign.png';
 import resume_23 from './resume_23.png';
+import resume_24 from './wang_resume_24.png';
 import lnyposter from './lnyposter.png';
 import gotmilk from './gotmilk.png';
 import portfoliozine from './portfoliozine.png';
@@ -22,7 +23,7 @@ import baci from './baci.png';
 export default new Map([
     ['andy', andy],
     ['hotspotDesign', hotspotDesign],
-    ['resume', resume_23],
+    ['resume', resume_24],
     ['lnyposter', lnyposter],
     ['gotmilk', gotmilk],
     ['portfoliozine', portfoliozine],

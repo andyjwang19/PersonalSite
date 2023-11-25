@@ -49,7 +49,7 @@ export default function Resume() {
                 <img className="mr-10 w-[750px]" src={images.get('resume')}></img>
                 <a
                     className="mt-6 h-[50px] w-[230px] bg-header-orange pt-1 text-center font-sans text-4xl font-bold tracking-tighter text-black drop-shadow-heavy"
-                    href="https://github.com/andyjwang19/Resume/blob/main/wang_23_resume.pdf"
+                    href="https://github.com/andyjwang19/Resume/blob/main/wang_resume_24.pdf"
                     target="_blank"
                     rel="noreferrer"
                 >
