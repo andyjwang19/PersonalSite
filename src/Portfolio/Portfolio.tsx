@@ -21,7 +21,7 @@ export default function Portfolio({ name, filters, blurb, data }: PortfolioProps
         <div className="flex w-screen flex-grow flex-col items-center bg-background-lavender">
             <div className="ml-7 mb-12">
                 <div className="z-10 flex items-center">
-                    <div className="mr-36 flex-none font-sans text-[250px] font-medium leading-none tracking-[-0.1em]">
+                    <div className="mr-36 flex-none font-sans text-[250px] font-black leading-none tracking-[-0.1em]">
                         {name.toUpperCase()}
                     </div>
                     <div className={'flex flex-col'}>
@@ -39,7 +39,7 @@ export default function Portfolio({ name, filters, blurb, data }: PortfolioProps
                         ))}
                     </div>
                 </div>
-                <div className="-mt-12 text-start font-sans text-[250px] font-medium leading-none tracking-[-0.075em]">
+                <div className="-mt-12 text-start font-sans text-[250px] font-black leading-none tracking-[-0.075em]">
                     PORTFOLIO
                 </div>
             </div>

@@ -37,36 +37,36 @@ export default function Splash() {
     return (
         <div className="flex w-screen flex-grow flex-row overflow-hidden bg-background-lavender">
             {/* splash image and title */}
-            <div className="fixed z-20 h-screen">
+            <div className="fixed z-20 h-screen font-[new-spirit]">
                 <div
-                    className={`transform] absolute top-[55px] left-[57px] h-[150] w-[131px] font-sans text-[100px] font-bold leading-[4.6875rem] tracking-tighter transition-transform duration-200	ease-out	${
+                    className={`transform] absolute top-[35px] left-[30px] h-[150] w-[131px]  text-[100px] font-bold leading-[5rem] tracking-tighter transition-transform duration-200	ease-out	${
                         start ? 'translate-x-0' : '-translate-x-52'
                     }`}
                 >
                     hi! i'm
                 </div>
                 <div
-                    className={`absolute top-[-92px] left-[205px] z-20 h-[150] w-[131px] font-sans text-[300px] font-bold tracking-[-0.1em] transition-transform delay-500 duration-200	ease-out	${
-                        start ? 'translate-y-0' : '-translate-y-64'
+                    className={`absolute top-[-100px] left-[175px] z-20 h-[150] w-[131px]  text-[300px] font-bold tracking-[-0.1em] transition-transform delay-500 duration-200	ease-out	${
+                        start ? 'translate-y-0' : '-translate-y-96'
                     }`}
                 >
-                    ANDY
+                    Andy
                 </div>
                 <div
-                    className={`absolute left-[-38px] top-[150px] h-[150] w-[131px] font-sans text-[300px] font-bold tracking-[-0.1em] transition-transform delay-[400ms] duration-[400ms]	ease-out	${
+                    className={`absolute left-[-58px] top-[130px] h-[150] w-[131px]  text-[300px] font-bold tracking-[-0.1em] transition-transform delay-[400ms] duration-[400ms]	ease-out	${
                         start ? 'translate-x-0' : '-translate-x-[1000px]'
                     }`}
                 >
-                    WANG
+                    Wang
                 </div>
                 <div
                     className={`h-screen w-[900px] transition-transform delay-[800ms] duration-[400ms]	ease-out	${
-                        start ? 'translate-y-0' : 'translate-y-[1000px]'
+                        start ? 'translate-y-16' : 'translate-y-[1000px]'
                     }`}
                 >
                     <img
                         src={andycutout}
-                        className={`absolute bottom-0 h-3/5 transition duration-300 ease-in-out hover:scale-110 `}
+                        className={`absolute bottom-0 h-3/5 transition duration-300 ease-in-out hover:opacity-50 `}
                     />
                 </div>
                 <div
@@ -98,7 +98,7 @@ export default function Splash() {
                 }`}
             >
                 <div className="fixed z-10 h-16 w-full bg-gradient-to-b from-background-lavender to-transparent"></div>
-                <p className="mt-[56px] mr-[40px] mb-12 font-sans text-5xl font-semibold">
+                <p className="mt-[70px] mr-[45px] mb-12 font-sans text-5xl font-semibold">
                     &emsp; Welcome to my page! My name is Andy Wang and I am a current senior at
                     Columbia University studying Computer Science and Anthropology, currently
                     seeking a software engineering internship for the Summer of 2024. My academic

@@ -3,24 +3,22 @@ import { useParams } from 'react-router-dom';
 import images from '../assets';
 import dataApi from '../api/dataApi';
 import { PortfolioData } from '../Models/portfolio';
+import dataFetch from '../api/dataFetch';
 
 export default function InfoPage() {
     const params = useParams();
     const [entry, setEntry] = useState<PortfolioData>();
     const [loading, setLoading] = useState(1);
-    const api = new dataApi();
+    const api = new dataFetch();
     useEffect(() => {
         window.scrollTo(0, 0);
-        async function load() {
-            const entry = await api.getEntry(
-                params.type,
-                parseInt(params.entryId ? params.entryId : '')
-            );
-            if (entry === null) {
+        function load() {
+            const entry = api.getEntry(params.type, parseInt(params.entryId ? params.entryId : ''));
+            if (entry === undefined || entry === null) {
                 throw new Error('Invalid type or id');
             }
 
-            setEntry(await entry.json());
+            setEntry(entry);
             setLoading(0);
         }
         if (!entry) {
