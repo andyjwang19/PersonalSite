@@ -34,7 +34,7 @@ function Header() {
                     <div
                         className={`border-r border-black pt-[15px] pb-[15px] pl-[20px] pr-[20px] `}
                     >
-                        RESUME
+                        resume
                     </div>
                 </Link>
                 <div className="z-50" onMouseLeave={() => setPortfolioHover(false)}>
@@ -44,37 +44,37 @@ function Header() {
                         onMouseEnter={() => setPortfolioHover(true)}
                     >
                         <div className="border-r border-black pt-[15px] pb-[15px] pl-[20px] pr-[20px] ">
-                            PORTFOLIO
+                            portfolio
                         </div>
                     </div>
                     {/* mr-[103.5px]  */}
                     {portfolioHover ? (
                         <div className="absolute right-[164px] ">
                             <Link
-                                className="flex h-24 w-[467px] items-center border border-white bg-black"
+                                className="flex h-24 w-[200px] items-center justify-end border border-white bg-black"
                                 to="/portfolio/design"
                                 onClick={() => setPortfolioHover(false)}
                             >
-                                <p className="ml-5 align-middle font-sans text-2xl font-bold text-white">
-                                    DESIGN PORTFOLIO
+                                <p className="mr-5 align-middle font-sans text-2xl font-bold text-white ">
+                                    design
                                 </p>
                             </Link>
                             <Link
-                                className="right-[164px] flex h-24 w-[467px] items-center border border-white bg-black"
+                                className="right-[164px] flex h-24 w-[200px] items-center justify-end border border-white bg-black"
                                 to="/portfolio/code"
                                 onClick={() => setPortfolioHover(false)}
                             >
-                                <p className="ml-5 align-middle font-sans text-2xl font-bold text-white">
-                                    CODE PORTFOLIO
+                                <p className="mr-5 align-middle font-sans text-2xl font-bold text-white">
+                                    code
                                 </p>
                             </Link>
                             <Link
-                                className="right-[164px] flex h-24 w-[467px] items-center border border-white bg-black"
+                                className="right-[164px] flex h-24 w-[200px] items-center justify-end border border-white bg-black"
                                 to="/portfolio/bartending"
                                 onClick={() => setPortfolioHover(false)}
                             >
-                                <p className="ml-5 align-middle font-sans text-2xl font-bold text-white">
-                                    BARTENDING PORTFOLIO
+                                <p className="mr-5 align-middle font-sans text-2xl font-bold text-white">
+                                    bartending
                                 </p>
                             </Link>
                         </div>
@@ -92,7 +92,7 @@ function Header() {
                     className="flex h-full items-center font-sans text-[32px] font-bold"
                     to="/contact"
                 >
-                    <div className="pl-[20px] pr-[30px] ">CONTACT</div>
+                    <div className="pl-[20px] pr-[30px] ">contact</div>
                 </Link>
             </div>
         </div>
