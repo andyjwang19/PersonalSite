@@ -21,10 +21,10 @@ function Header() {
                 <div className="pointer-events-none absolute top-0 z-40 h-screen w-screen bg-black opacity-50"></div>
             ) : null}
             <Link
-                className="align-center ml-[36px] inline-block font-sans text-8xl font-bold"
+                className="align-center ml-[36px] inline-block pb-4 pt-2 font-[new-spirit] text-7xl font-bold"
                 to="/"
             >
-                ANDY WANG
+                andy wang
             </Link>
             <div className="flex h-full">
                 <Link
