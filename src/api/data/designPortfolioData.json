@@ -45,7 +45,7 @@
         {
             "entryId": 5,
             "name": "Inside Out Radio Station",
-            "imgSlugs": ["insideOutRadio"],
+            "imgSlugs": ["insideOutRadio.jpg"],
             "blurb": "This was the final project for the Architecture class Systems and Materials. In this project, I flipped a physical space I was familiar with, the Columbia Radio Station, inside out. Upon this exploration, I discovered several relationships and connections that I solidified into this model, making considerations on material and construction process.",
             "type": "Architecture",
             "skills": [

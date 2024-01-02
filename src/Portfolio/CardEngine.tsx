@@ -137,6 +137,7 @@ export default function CardEngine({ data }: CardEngineProps) {
                             const imageSlug = rowData[idx].imgSlugs;
                             return (
                                 <Card
+                                    key={rowData[idx].entryId}
                                     entryId={rowData[idx].entryId}
                                     name={rowData[idx].name}
                                     blurb={rowData[idx].blurb}

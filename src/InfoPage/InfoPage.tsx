@@ -43,7 +43,7 @@ export default function InfoPage() {
     }
     const firstWord = entry.name.split(' ')[0];
     const remainingTitle = entry.name.split(' ').slice(1).join(' ');
-
+    console.log(`entyr url`, entry.url);
     return (
         <div className="flex w-screen flex-grow flex-col items-center bg-background-lavender">
             <div className="flex w-full flex-row flex-nowrap ">
@@ -53,7 +53,7 @@ export default function InfoPage() {
                 {entry.url ? (
                     <div className="mr-16 flex flex-col justify-center ">
                         <div className="bg-black p-2 font-sans text-4xl font-bold tracking-tighter text-white transition duration-300 ease-in-out hover:scale-105">
-                            <a href={entry.url} target="_blank" rel="noreferrer">
+                            <a href={`https://${entry.url}`} target="_blank" rel="noreferrer">
                                 Link to Project
                             </a>
                         </div>
@@ -68,7 +68,9 @@ export default function InfoPage() {
                     {entry.imgSlugs.map((imgSlug) => {
                         return (
                             <img
-                                src={images.get(imgSlug)}
+                                key={imgSlug}
+                                // src={images.get(imgSlug)}
+                                src={`${process.env.PUBLIC_URL}/images/${imgSlug}`}
                                 alt={imgSlug}
                                 className="max-w-48 ml-[92px] max-h-96 flex-shrink-0 bg-white"
                             />

@@ -6,6 +6,21 @@
     },
     "entries": [
         {
+            "entryId": 6,
+            "name": "Renny Gong's Website",
+            "blurb": "I built this app from scratch, and from no knowledge of mobile development. From following best React practices learned from The Vendry, alongside numerous online tutorials, I built this using React Native and Expo Go for a final project for UI Design. This app collects suggestions and favorite places from your friends, sorts them based on several metrics before displaying them for the user to scroll through. This app implements ratings, reviews, and location data.",
+            "url": "rennygong.com",
+            "skills": [
+                "React",
+                "React-Native",
+                "Implementing Design",
+                "Typescript",
+                "MapView",
+                "Expo SDK"
+            ],
+            "imgSlugs": ["rennygong1.png", "rennygong2.png"]
+        },
+        {
             "entryId": 1,
             "name": "HotSpot",
             "blurb": "I built this app from scratch, and from no knowledge of mobile development. From following best React practices learned from The Vendry, alongside numerous online tutorials, I built this using React Native and Expo Go for a final project for UI Design. This app collects suggestions and favorite places from your friends, sorts them based on several metrics before displaying them for the user to scroll through. This app implements ratings, reviews, and location data.",
@@ -18,7 +33,7 @@
                 "MapView",
                 "Expo SDK"
             ],
-            "imgSlugs": ["hotspotCode_1", "hotspotCode_2", "hotspotCode_3"]
+            "imgSlugs": ["hotspotCode_1.png", "hotspotCode_2", "hotspotCode_3"]
         },
         {
             "entryId": 2,

@@ -14,6 +14,7 @@ interface CodeCardProps {
 }
 
 export default function Card({ entryId, name, blurb, imageSlug, url, size }: CodeCardProps) {
+    console.log(`imageslug`, imageSlug);
     const adj = size === cardSizes.Small ? 'w-1/6' : size === cardSizes.Medium ? 'w-1/3' : 'w-1/2';
     const imgLocation =
         size === cardSizes.Small
@@ -36,7 +37,10 @@ export default function Card({ entryId, name, blurb, imageSlug, url, size }: Cod
                 {/* <div className="flex w-screen flex-grow flex-col items-center bg-background-lavender"> */}
                 {imageSlug !== undefined ? (
                     <img
-                        src={images.get(imageSlug as string)}
+                        // src={images.get(imageSlug as string)}
+                        src={`${process.env.PUBLIC_URL}/images/${
+                            imageSlug.includes('.') ? imageSlug : imageSlug.concat('.png')
+                        }`}
                         className={`mx-auto ${imgTopMargin} ${imgSize}`}
                     />
                 ) : null}
