@@ -1,36 +1,18 @@
 {
   "files": {
-    "main.css": "/PersonalSite/static/css/main.2ab4899c.css",
-    "main.js": "/PersonalSite/static/js/main.1931a985.js",
+    "main.css": "/PersonalSite/static/css/main.66230264.css",
+    "main.js": "/PersonalSite/static/js/main.6b6f2aa0.js",
     "static/js/787.5809834d.chunk.js": "/PersonalSite/static/js/787.5809834d.chunk.js",
-    "static/media/insideOutRadio.jpg": "/PersonalSite/static/media/insideOutRadio.a75d4c7feaf6da4754e6.jpg",
-    "static/media/placeholder.png": "/PersonalSite/static/media/placeholder.de0f4ba009366354102f.png",
-    "static/media/lnyposter.png": "/PersonalSite/static/media/lnyposter.b697c84dbf988c2357ee.png",
-    "static/media/portfoliozine.png": "/PersonalSite/static/media/portfoliozine.c1357d54dacace8feece.png",
     "static/media/andycutout.png": "/PersonalSite/static/media/andycutout.bf998d8fe9cf691b1a8b.png",
     "static/media/wang_resume_24.png": "/PersonalSite/static/media/wang_resume_24.1d67cb18c6a259c7637f.png",
-    "static/media/gotmilk.png": "/PersonalSite/static/media/gotmilk.fe4f876319aca64aef4a.png",
-    "static/media/hotspotDesign.png": "/PersonalSite/static/media/hotspotDesign.9f35bc1a454b88f260a9.png",
-    "static/media/baci.png": "/PersonalSite/static/media/baci.ac24dd46c0ed3a53d052.png",
-    "static/media/hotspotCode_2.png": "/PersonalSite/static/media/hotspotCode_2.8d024833ea1e68f12be9.png",
-    "static/media/hotspotCode_3.png": "/PersonalSite/static/media/hotspotCode_3.a5f5727abe011cc47d39.png",
     "static/media/andy.png": "/PersonalSite/static/media/andy.89672a37bc5f7239e7ea.png",
-    "static/media/hotspotDesign_1.png": "/PersonalSite/static/media/hotspotDesign_1.e2746816db457ad1da94.png",
-    "static/media/personalDesign_1.png": "/PersonalSite/static/media/personalDesign_1.023d964b91c067a4fdd6.png",
-    "static/media/hotspotCode_1.png": "/PersonalSite/static/media/hotspotCode_1.3fc8198c85dab425e94c.png",
-    "static/media/hotspotDesign_2.png": "/PersonalSite/static/media/hotspotDesign_2.524d39c3718ccee1caaa.png",
-    "static/media/personalDesign_3.png": "/PersonalSite/static/media/personalDesign_3.22f20d45001566025ac7.png",
-    "static/media/hotspotDesign_3.png": "/PersonalSite/static/media/hotspotDesign_3.84c888cc226353ed83b0.png",
-    "static/media/hotspotDesign_4.png": "/PersonalSite/static/media/hotspotDesign_4.38c181ef69d1e3ce7d37.png",
-    "static/media/personalDesign_2.png": "/PersonalSite/static/media/personalDesign_2.abebfeadf7c1c744abc3.png",
-    "static/media/hotspotDesign_5.png": "/PersonalSite/static/media/hotspotDesign_5.cb351810de616817d963.png",
     "index.html": "/PersonalSite/index.html",
-    "main.2ab4899c.css.map": "/PersonalSite/static/css/main.2ab4899c.css.map",
-    "main.1931a985.js.map": "/PersonalSite/static/js/main.1931a985.js.map",
+    "main.66230264.css.map": "/PersonalSite/static/css/main.66230264.css.map",
+    "main.6b6f2aa0.js.map": "/PersonalSite/static/js/main.6b6f2aa0.js.map",
     "787.5809834d.chunk.js.map": "/PersonalSite/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ab4899c.css",
-    "static/js/main.1931a985.js"
+    "static/css/main.66230264.css",
+    "static/js/main.6b6f2aa0.js"
   ]
 }
