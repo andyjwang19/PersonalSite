@@ -26,22 +26,8 @@ enum cardSizeImageBreakpoints {
 
 const patterns = [
     [cardSizes.Small, cardSizes.Large, cardSizes.Medium],
-    [cardSizes.Small, cardSizes.Medium, cardSizes.Large],
-    [cardSizes.Medium, cardSizes.Large, cardSizes.Small],
     [cardSizes.Medium, cardSizes.Small, cardSizes.Large],
-    [cardSizes.Large, cardSizes.Small, cardSizes.Medium],
     [cardSizes.Large, cardSizes.Medium, cardSizes.Small],
-
-    [cardSizes.Medium, cardSizes.Medium, cardSizes.Medium],
-    [cardSizes.Large, cardSizes.Large],
-    [
-        cardSizes.Small,
-        cardSizes.Small,
-        cardSizes.Small,
-        cardSizes.Small,
-        cardSizes.Small,
-        cardSizes.Small,
-    ],
 ];
 
 function generateLayout(dataSizes: cardSizes[]): number[][] {
@@ -90,66 +76,98 @@ function generateLayout(dataSizes: cardSizes[]): number[][] {
 }
 
 export default function CardEngine({ data }: CardEngineProps) {
-    function generateDataSizes(data: { text: string; img: number }[]): cardSizes[] {
-        return data.map((d) => {
-            if (d.img === 0) {
-                if (d.text.length < cardSizeBreakpoints.Small) {
-                    return cardSizes.Small;
-                }
-                if (d.text.length < cardSizeBreakpoints.Medium) {
-                    return cardSizes.Medium;
-                }
-                return cardSizes.Large;
-            } else {
-                if (d.text.length < cardSizeImageBreakpoints.Small) {
-                    return cardSizes.Small;
-                }
-                if (d.text.length < cardSizeImageBreakpoints.Medium) {
-                    return cardSizes.Medium;
-                }
-                return cardSizes.Large;
-            }
-        });
-    }
-    const dataSizes = generateDataSizes(
-        data.map((d) => {
-            return { text: d.blurb, img: d.imgSlugs !== undefined ? 1 : 0 };
-        })
-    );
-    const layout = generateLayout(dataSizes);
-
+    const sizeCycle = [
+        cardSizes.Small,
+        cardSizes.Large,
+        cardSizes.Medium,
+        cardSizes.Medium,
+        cardSizes.Small,
+        cardSizes.Large,
+        cardSizes.Large,
+        cardSizes.Medium,
+        cardSizes.Small,
+    ];
     return (
-        <div className="flex w-full flex-col pl-5 pr-5 pb-10">
-            {layout.map((row) => {
-                const rowData = row
-                    .filter((x) => x !== -1)
-                    .map((r) => {
-                        return data[r];
-                    });
-                const pattern = row
-                    .filter((x) => x !== -1)
-                    .map((r) => {
-                        return dataSizes[r];
-                    });
+        <div className="ml-5 mr-5 flex flex-row flex-wrap pb-10">
+            {/* <div className="bg-white"> */}
+            {data.map((item, idx) => {
                 return (
-                    <div className="mb-2 mt-2 flex w-full flex-row">
-                        {pattern.map((p, idx) => {
-                            const imageSlug = rowData[idx].imgSlugs;
-                            return (
-                                <Card
-                                    key={rowData[idx].entryId}
-                                    entryId={rowData[idx].entryId}
-                                    name={rowData[idx].name}
-                                    blurb={rowData[idx].blurb}
-                                    imageSlug={imageSlug ? imageSlug[0] : undefined}
-                                    url={rowData[idx].url}
-                                    size={p}
-                                />
-                            );
-                        })}
-                    </div>
+                    // <div className="mb-2 mt-2 flex w-full flex-row">
+                    <Card
+                        key={item.entryId}
+                        entryId={item.entryId}
+                        name={item.name}
+                        blurb={item.blurb}
+                        imageSlug={item.imgSlugs ? item.imgSlugs[0] : undefined}
+                        url={item.url}
+                        size={sizeCycle[idx % sizeCycle.length]}
+                    />
+                    // </div>
                 );
             })}
         </div>
     );
+
+    // function generateDataSizes(data: { text: string; img: number }[]): cardSizes[] {
+    //     return data.map((d) => {
+    //         if (d.img === 0) {
+    //             if (d.text.length < cardSizeBreakpoints.Small) {
+    //                 return cardSizes.Small;
+    //             }
+    //             if (d.text.length < cardSizeBreakpoints.Medium) {
+    //                 return cardSizes.Medium;
+    //             }
+    //             return cardSizes.Large;
+    //         } else {
+    //             if (d.text.length < cardSizeImageBreakpoints.Small) {
+    //                 return cardSizes.Small;
+    //             }
+    //             if (d.text.length < cardSizeImageBreakpoints.Medium) {
+    //                 return cardSizes.Medium;
+    //             }
+    //             return cardSizes.Large;
+    //         }
+    //     });
+    // }
+    // const dataSizes = generateDataSizes(
+    //     data.map((d) => {
+    //         return { text: d.blurb, img: d.imgSlugs !== undefined ? 1 : 0 };
+    //     })
+    // );
+    // const layout = generateLayout(dataSizes);
+
+    // return (
+    //     <div className="flex w-full flex-col pl-5 pr-5 pb-10">
+    //         {layout.map((row) => {
+    //             const rowData = row
+    //                 .filter((x) => x !== -1)
+    //                 .map((r) => {
+    //                     return data[r];
+    //                 });
+    //             const pattern = row
+    //                 .filter((x) => x !== -1)
+    //                 .map((r) => {
+    //                     return dataSizes[r];
+    //                 });
+    //             return (
+    //                 <div className="mb-2 mt-2 flex w-full flex-row">
+    //                     {pattern.map((p, idx) => {
+    //                         const imageSlug = rowData[idx].imgSlugs;
+    //                         return (
+    //                             <Card
+    //                                 key={rowData[idx].entryId}
+    //                                 entryId={rowData[idx].entryId}
+    //                                 name={rowData[idx].name}
+    //                                 blurb={rowData[idx].blurb}
+    //                                 imageSlug={imageSlug ? imageSlug[0] : undefined}
+    //                                 url={rowData[idx].url}
+    //                                 size={p}
+    //                             />
+    //                         );
+    //                     })}
+    //                 </div>
+    //             );
+    //         })}
+    //     </div>
+    // );
 }

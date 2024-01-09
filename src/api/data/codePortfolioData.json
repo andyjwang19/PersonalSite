@@ -8,7 +8,7 @@
         {
             "entryId": 6,
             "name": "Renny Gong's Website",
-            "blurb": "I built this app from scratch, and from no knowledge of mobile development. From following best React practices learned from The Vendry, alongside numerous online tutorials, I built this using React Native and Expo Go for a final project for UI Design. This app collects suggestions and favorite places from your friends, sorts them based on several metrics before displaying them for the user to scroll through. This app implements ratings, reviews, and location data.",
+            "blurb": "I worked with this client for several months, iterating designs to best match their personality and writing achievements. We aggreed upon the design for this website, which I mocked up in Figma. I then developed the website as a static frontend using Typescript, React, and Tailwind CSS. Working with the client, I created and doocumented a procedure for the client to add to his portfolio and to deploy those changes in a non-technical-friendly process.",
             "url": "rennygong.com",
             "skills": [
                 "React",
@@ -33,7 +33,7 @@
                 "MapView",
                 "Expo SDK"
             ],
-            "imgSlugs": ["hotspotCode_1.png", "hotspotCode_2", "hotspotCode_3"]
+            "imgSlugs": ["hotspotCode_1.png", "hotspotCode_2.png", "hotspotCode_3.png"]
         },
         {
             "entryId": 2,

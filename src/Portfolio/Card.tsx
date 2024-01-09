@@ -28,24 +28,26 @@ export default function Card({ entryId, name, blurb, imageSlug, url, size }: Cod
     const imgSize =
         size === cardSizes.Small ? 'max-h-48' : size === cardSizes.Medium ? 'max-h-64' : 'max-h-64';
     return (
-        <Link
-            className={`m-2 flex h-96 flex-col whitespace-normal break-words rounded-lg bg-white/50 p-2 font-sans font-medium transition duration-300 ease-in-out hover:scale-[1.03] hover:border-2 hover:border-stone-600 hover:bg-white/90 hover:p-1.5 ${adj}`}
-            to={entryId.toString()}
-        >
-            <div className="pb-2 text-center font-sans text-2xl tracking-tighter">{name}</div>
-            <div className={`grow ${imgLocation}`}>
-                {/* <div className="flex w-screen flex-grow flex-col items-center bg-background-lavender"> */}
-                {imageSlug !== undefined ? (
-                    <img
-                        // src={images.get(imageSlug as string)}
-                        src={`${process.env.PUBLIC_URL}/images/${
-                            imageSlug.includes('.') ? imageSlug : imageSlug.concat('.png')
-                        }`}
-                        className={`mx-auto ${imgTopMargin} ${imgSize}`}
-                    />
-                ) : null}
-                <div className={`ml-4 ${clamp}`}>{blurb}</div>
-            </div>
-        </Link>
+        <div className={`${adj} h-96 p-2`}>
+            <Link
+                className={`flex h-full w-full flex-col whitespace-normal break-words rounded-lg bg-white/50 p-2 font-sans font-medium transition duration-300 ease-in-out hover:scale-[1.03] hover:border-2 hover:border-stone-600 hover:bg-white/90 hover:p-1.5 `}
+                to={entryId.toString()}
+            >
+                <div className="pb-2 text-center font-sans text-2xl tracking-tighter">{name}</div>
+                <div className={`grow ${imgLocation}`}>
+                    {/* <div className="flex w-screen flex-grow flex-col items-center bg-background-lavender"> */}
+                    {imageSlug !== undefined ? (
+                        <img
+                            src={`${process.env.PUBLIC_URL}/images/${
+                                imageSlug.includes('.') ? imageSlug : imageSlug.concat('.png')
+                            }`}
+                            className={`mx-auto ${imgTopMargin} ${imgSize}`}
+                            alt={imageSlug}
+                        />
+                    ) : null}
+                    <div className={`ml-4 ${clamp}`}>{blurb}</div>
+                </div>
+            </Link>
+        </div>
     );
 }
