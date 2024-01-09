@@ -9,7 +9,7 @@
             "entryId": 6,
             "name": "Renny Gong's Website",
             "blurb": "I worked with this client for several months, iterating designs to best match their personality and writing achievements. We aggreed upon the design for this website, which I mocked up in Figma. I then developed the website as a static frontend using Typescript, React, and Tailwind CSS. Working with the client, I created and doocumented a procedure for the client to add to his portfolio and to deploy those changes in a non-technical-friendly process.",
-            "url": "rennygong.com",
+            "url": "https://rennygong.com",
             "skills": [
                 "React",
                 "React-Native",
