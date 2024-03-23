@@ -13,6 +13,9 @@ module.exports = {
             dropShadow: {
                 heavy: '6px 6px 4px rgba(0, 0, 0, 0.25)',
             },
+            scale: {
+                '-100': '-1',
+            },
         },
     },
     plugins: [require('@tailwindcss/line-clamp')],
