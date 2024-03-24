@@ -16,6 +16,9 @@ module.exports = {
             scale: {
                 '-100': '-1',
             },
+            transitionProperty: {
+                left: 'left',
+            },
         },
     },
     plugins: [require('@tailwindcss/line-clamp')],
