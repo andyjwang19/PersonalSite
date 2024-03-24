@@ -162,14 +162,14 @@ export default function Splash() {
                     }`
                 }
             >
-                <Link to="/resume">
-                    <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy transition duration-150 ease-in-out hover:scale-110">
-                        RESUME
-                    </div>
-                </Link>
                 <Link to="/portfolio/code">
                     <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy transition duration-150 ease-in-out hover:scale-110">
                         PORTFOLIO
+                    </div>
+                </Link>
+                <Link to="/resume">
+                    <div className="h-[68px] w-[234px] border-[3px] border-black bg-header-orange pt-[10px] text-center font-sans text-4xl font-bold tracking-tighter drop-shadow-heavy transition duration-150 ease-in-out hover:scale-110">
+                        RESUME
                     </div>
                 </Link>
                 <Link to="/contact">
