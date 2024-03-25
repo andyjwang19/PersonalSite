@@ -16,17 +16,17 @@ function Header() {
     const portfolioAnimated = `flex h-full items-center font-sans text-[32px] transition ease-in-out duration:500 font-bold hover:bg-black hover:text-white`;
 
     return (
-        <div className="sticky top-0 z-20 flex h-[95px] w-full	items-center justify-between border-b border-black bg-header-orange">
+        <div className="fixed top-0 z-20 flex h-[80px]	w-full items-center justify-between  border-black bg-header-orange ">
             {portfolioHover ? (
                 <div className="pointer-events-none absolute top-0 z-40 h-screen w-screen bg-black opacity-50"></div>
             ) : null}
             <Link
-                className="align-center ml-[36px] inline-block pb-4 pt-2 font-[new-spirit] text-7xl font-bold"
+                className="align-center ml-[36px] inline-block pb-4 pt-2 font-[new-spirit] text-6xl font-bold  tracking-[-0.07em] sm:text-7xl"
                 to="/"
             >
-                andy wang
+                Andy Wang
             </Link>
-            <div className="flex h-full">
+            <div className="hidden h-full sm:flex">
                 <Link
                     className="flex h-full items-center font-sans text-[32px] font-bold"
                     to="/resume"
@@ -47,7 +47,6 @@ function Header() {
                             portfolio
                         </div>
                     </div>
-                    {/* mr-[103.5px]  */}
                     {portfolioHover ? (
                         <div className="absolute right-[164px] ">
                             <Link
@@ -80,14 +79,6 @@ function Header() {
                         </div>
                     ) : null}
                 </div>
-                {/* <Link
-                    className="flex h-full items-center font-sans text-[32px] font-bold"
-                    to="/blog"
-                >
-                    <div className="border-r border-black pl-[20px] pr-[20px] pt-[15px] pb-[15px] ">
-                        BLOG
-                    </div>
-                </Link> */}
                 <Link
                     className="flex h-full items-center font-sans text-[32px] font-bold"
                     to="/contact"

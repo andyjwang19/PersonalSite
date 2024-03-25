@@ -41,7 +41,7 @@
             "blurb": "This is the website you are currently on! I built this website using React and Typescript. I wanted to learn a new technology as well, so I decided to implement Tailwind CSS for styling. I set up a different node scripts, including a deploy script that automatically builds and publishes the changes onto Git Pages.",
             "url": "https://github.com/andyjwang19/PersonalSite",
             "skills": ["React", "Implementing Design", "Typescript", "Tailwind CSS", "HTML/CSS"],
-            "imgSlugs": ["placeholder"]
+            "imgSlugs": ["placeholder.png"]
         },
         {
             "entryId": 3,
@@ -49,21 +49,21 @@
             "blurb": "I created a backend for my personal website to serve data on various portfolio elements. This was written in NodeJS and ExpressJS, and hosted on AWS EC2. This backend was connected to the front end through a REST API, called through HTTP requests.",
             "url": "https://github.com/andyjwang19/PersonalSite/tree/main/server",
             "skills": [],
-            "imgSlugs": ["placeholder"]
+            "imgSlugs": ["placeholder.png"]
         },
         {
             "entryId": 4,
             "name": "Accolades for The Vendry",
             "blurb": "As a capstone project for my Internship at The Vendry, I added an Accolade System to their search. The Vendry has several services, the primary one being their venue search, which allows hosts and companies to look through a carefully curated dataset of venues. An important aspect of the users' evaluations of a particular venue would be any awards the venue has won. This is the service I added. I worked on the full-stack of this service, from creating and designing the database to store necessary values, writing API paths for the frontend to get the values from the backend, to a front end display. The Frontend display included an option in the search bar for all users to see, as well as an inward facing interface for admins to manipulate the database.",
             "skills": ["React", "APIs", "Full-Stack", "Implementing Design", "Typescript"],
-            "imgSlugs": ["placeholder"]
+            "imgSlugs": ["placeholder.png"]
         },
         {
             "entryId": 5,
             "name": "Website Portfolio Engine",
             "blurb": "This element of my personal website allows me to automate the layout of my portfolios. The different elements are sorted in Small, Medium, and Large based on the length of the blurbs, before the algorithm mixes and matches to form an interesting layout.",
             "skills": ["Algorithm Design", "React", "Typescript", "Tailwind CSS", "HTML/CSS"],
-            "imgSlugs": ["placeholder"]
+            "imgSlugs": ["placeholder.png"]
         }
     ]
 }

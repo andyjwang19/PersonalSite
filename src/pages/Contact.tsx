@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <div className="flex w-screen flex-grow flex-col items-center bg-background-lavender font-sans text-lg">
+        <div className="flex w-screen flex-col items-center bg-background-lavender font-sans text-lg">
             <br></br>
             <br></br>
             Unfortunately, this page is still under construction-- currently working on cooking up a

@@ -1,4 +1,4 @@
-import { CompletePortfolio } from '../Models/portfolio';
+import { CompletePortfolio, PortfolioData } from '../Models/portfolio';
 import bartendingPortfolioData from './data/bartendingPortfolioData.json';
 import codePortfolioData from './data/codePortfolioData.json';
 import designPortfolioData from './data/designPortfolioData.json';
@@ -8,13 +8,13 @@ export default class dataFetch {
 
     get() {}
 
-    getPortfolio(type: string) {
+    getPortfolio(type: string): CompletePortfolio {
         // if (portfolioParamCheck(type)) {
         //     throw new Error('Invalid Portfolio Type');
         // }
-        if (type === 'bartending') return bartendingPortfolioData;
-        else if (type === 'code') return codePortfolioData;
-        else if (type === 'design') return designPortfolioData;
+        if (type === 'code') return codePortfolioData;
+        // else if (type === 'code') return codePortfolioData;
+        // else if (type === 'design') return designPortfolioData;
         else {
             throw new Error('Invalid Portfolio Type');
         }
@@ -30,12 +30,16 @@ export default class dataFetch {
         // });
     }
 
-    getEntry(type?: string, entryId?: number) {
+    getEntry(type?: string, entryId?: number): PortfolioData {
         if (!type || !entryId) {
-            return null;
+            throw new Error();
         }
         const port = this.getPortfolio(type);
-        return port.entries.find((entry) => entry.entryId === entryId);
+        const res = port.entries.find((entry) => entry.entryId === entryId);
+        if (res === undefined) {
+            throw new Error();
+        }
+        return res;
         // return fetch(`${root}/portfolio/${type}/${entryId}`);
     }
 }
