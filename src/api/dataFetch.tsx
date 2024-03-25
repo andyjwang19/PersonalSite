@@ -13,8 +13,8 @@ export default class dataFetch {
         //     throw new Error('Invalid Portfolio Type');
         // }
         if (type === 'code') return codePortfolioData;
-        // else if (type === 'code') return codePortfolioData;
-        // else if (type === 'design') return designPortfolioData;
+        else if (type === 'bartending') return bartendingPortfolioData;
+        else if (type === 'design') return designPortfolioData;
         else {
             throw new Error('Invalid Portfolio Type');
         }

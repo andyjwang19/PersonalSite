@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import Card from '../Portfolio/Card';
 import CardEngine from './CardEngine';
 import { PortfolioData } from '../Models/portfolio';
+import { Link, Router, useNavigate } from 'react-router-dom';
 
 interface PortfolioProps {
     name: string;
@@ -14,13 +15,67 @@ interface PortfolioProps {
 export default function Portfolio({ name, filters, blurb, data }: PortfolioProps) {
     const [filterState, setFilterState] = useState([false, false, false]);
     const [currentEntry, setCurrentEntry] = useState<PortfolioData>();
+    // const [scrollPosition, setScrollPosition] = useState(0);
+    const scrollRef = useRef(0);
+    // scrollRef.current.scrollLeft = 0
+
+    useEffect(() => {
+        document.getElementById('entries')?.scroll(scrollRef.current, 0);
+    }, [currentEntry]);
+
+    const navigate = useNavigate();
+
+    // componentDidMount;
+
     const textStyle = 'font-sans leading-none tracking-[-0.075em] ';
     const MainMenu = () => (
         <div className="flex h-full w-full flex-col items-center justify-center">
-            <div className="flex w-full justify-center">
-                <div className="ml-4 hidden h-full grow bg-blue-200 pt-4 sm:inline">
-                    <Selected />
+            <div className=" flex w-full flex-none justify-center ">
+                <div className="bg-black-200 ml-4 hidden h-[400px] max-w-full grow p-4 sm:inline">
+                    {currentEntry ? (
+                        <div className="flex h-full ">
+                            <div className="flex flex-col">
+                                <a
+                                    className={
+                                        `${textStyle} cursor-normal pb-4 text-center text-5xl font-medium ` +
+                                        `${
+                                            currentEntry.url
+                                                ? 'underline transition hover:scale-[1.2]'
+                                                : ''
+                                        }`
+                                    }
+                                    href={currentEntry.url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {currentEntry?.name}
+                                </a>
+                                <p
+                                    className={`${textStyle} overflow-scroll pb-2 text-3xl font-medium`}
+                                >
+                                    {currentEntry.blurb}
+                                </p>
+                            </div>
+
+                            <div className="flex h-full max-w-[500px] flex-none flex-row gap-4 overflow-x-scroll px-4">
+                                {currentEntry?.imgSlugs.map((imgSlug) => {
+                                    return (
+                                        <img
+                                            key={imgSlug}
+                                            // src={images.get(imgSlug)}
+                                            src={`../images/${imgSlug}`}
+                                            alt={imgSlug}
+                                            className="max-h-full max-w-[900px] grow bg-white object-cover"
+                                        />
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    ) : (
+                        <></>
+                    )}
                 </div>
+
                 <div className="flex flex-col items-center justify-center">
                     <div
                         className={
@@ -28,13 +83,28 @@ export default function Portfolio({ name, filters, blurb, data }: PortfolioProps
                             `flex justify-center gap-4 sm:flex-col sm:gap-0`
                         }
                     >
-                        <div>Code</div> <div className="leading-[55px]">Projects</div>
+                        <div>{name}</div> <div className="leading-[55px]">Projects</div>
                     </div>
                     <div className={`flex w-full flex-none gap-4 px-8 sm:flex-col`}>
                         <div
                             className={`${textStyle} border-1 my-auto ml-auto shrink-0 grow-0 border border-black bg-header-orange px-8 py-6 text-2xl font-black sm:order-last`}
+                            onClick={() => {
+                                setCurrentEntry(undefined);
+                                setFilterState([false, false, false]);
+                                if (name === 'Code') {
+                                    navigate('/portfolio/design');
+                                } else if (name === 'Design') {
+                                    navigate('/portfolio/bartending');
+                                } else {
+                                    navigate('/portfolio/code');
+                                }
+                            }}
                         >
-                            other work...
+                            {name === 'Code'
+                                ? 'other work...'
+                                : name === 'Design'
+                                ? 'other other work...'
+                                : 'back to Coding work!'}
                         </div>
                         <div className="grid w-full justify-items-end">
                             {filters.map((f, idx) => (
@@ -55,7 +125,13 @@ export default function Portfolio({ name, filters, blurb, data }: PortfolioProps
                     </div>
                 </div>
             </div>
-            <div className=" mt-4 flex w-full grow gap-4 overflow-scroll px-4 ">
+            <div
+                className=" mt-4 flex w-full grow gap-4 overflow-scroll px-4 "
+                onScroll={(event) => {
+                    scrollRef.current = (event.target as HTMLElement).scrollLeft;
+                }}
+                id="entries"
+            >
                 {data.map((portfolioEntry) => {
                     const imageSlug = `${
                         portfolioEntry.imgSlugs.length > 0

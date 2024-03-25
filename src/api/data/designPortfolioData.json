@@ -9,11 +9,11 @@
             "entryId": 1,
             "name": "HotSpot Design",
             "imgSlugs": [
-                "hotspotDesign_1",
-                "hotspotDesign_2",
-                "hotspotDesign_3",
-                "hotspotDesign_4",
-                "hotspotDesign_5"
+                "hotspotDesign_1.png",
+                "hotspotDesign_2.png",
+                "hotspotDesign_3.png",
+                "hotspotDesign_4.png",
+                "hotspotDesign_5.png"
             ],
             "blurb": "This design involved several iterations of prototyping and running user tests. I experimented with several versions, and ran them by groups of users. I landed on this final design, and made several mockups in Figma.",
             "type": "UI",
@@ -23,13 +23,14 @@
             "entryId": 2,
             "name": "MIC Brand Refresh",
             "blurb": "Upon entering the Music Industry at Columbia board as the Design Director, I met with the rest of the board to imagine a brand identity refresh. This club was the brainchild of the current president, so it was very important for me to preserve her passion and mission in the new design guidelines. This invovled creating a set of colors, fonts, and design styles that would work with the themes of the club.",
+            "imgSlugs": ["placeholder.png"],
             "type": "UI",
             "skills": ["Adobe Illustrator", "Adobe InDesign", "Colors", "Social Media Marketing"]
         },
         {
             "entryId": 3,
             "name": "Baci Brand Design",
-            "imgSlugs": ["baci"],
+            "imgSlugs": ["baci.png"],
             "blurb": "Baci is the passion-project and senior thesis of the Head Chef, and required an immense amount of self-sacrifice and committment. Upon joining Baci, I noticed that there was little in the way of brand or concept. Thus, I created a logo and uniform for the supper club that preserved the personality of the head chef, remaining playful while takiing things very seriously.",
             "type": "UI",
             "skills": ["Adobe Illustrator", "Colors", "Social Media Marketing"]
@@ -37,7 +38,7 @@
         {
             "entryId": 4,
             "name": "Graphic Design Portfolio Zine",
-            "imgSlugs": ["portfoliozine"],
+            "imgSlugs": ["portfoliozine.png"],
             "blurb": "I love zines, especially how a concept can be captured and performed in the bounds of sheets of folded-A4 paper. When it came time to collect a portfolio, I knew I didn't want to just submit a folder of loose work. I designed this zine to encapsulate and present my work with more intention than I could manage otherwise.",
             "type": "Graphic",
             "skills": ["Adobe Illustrator", "Colors", "Adobe InDesign"]
@@ -60,7 +61,7 @@
         {
             "entryId": 6,
             "name": "Lunar New Year Poster",
-            "imgSlugs": ["lnyposter"],
+            "imgSlugs": ["lnyposter.png"],
             "blurb": "In this poster, I worked on developing my own style, as well as more skills with Adobe Illustrator. I was inspired by maximalist works I had recently seen, and intended to make something that was simultaneously sensorily overwhelming and cohesive.                                                                                                                                ",
             "type": "Graphic",
             "skills": ["Adobe Illustrator"]
@@ -69,13 +70,14 @@
             "entryId": 7,
             "name": "Social System Chair",
             "blurb": "This was my first exploration into Architecture. In this project, I identified a social system in my personali life, that of the mailroom line that invovled two queues that crossed each other. I designed this chair to change up that social system, changing the intersection into a round-a-bout type interaction.",
+            "imgSlugs": ["placeholder.png"],
             "type": "Architecture",
             "skills": ["Rhino Modelling", "Adobe Illustrator", "Adobe InDesign"]
         },
         {
             "entryId": 8,
             "name": "Got Milk? Poster",
-            "imgSlugs": ["gotmilk"],
+            "imgSlugs": ["gotmilk.png"],
             "blurb": "The purpose of this poster was as an exercise of logo-making and illustrative design.",
             "type": "Graphic",
             "skills": ["Adobe Illustrator"]
@@ -83,7 +85,7 @@
         {
             "entryId": 9,
             "name": "Personal Website",
-            "imgSlugs": ["personalDesign_1", "personalDesign_2", "personalDesign_3"],
+            "imgSlugs": ["personalDesign_1.png", "personalDesign_2.png", "personalDesign_3.png"],
             "blurb": "I designed this website on Figma before developing and deploying it. Here, I worked on the most visually-appealing way to display information I was very familiar with.",
             "type": "UI",
             "skills": ["Figma", "Prototyping", "Colors"]
