@@ -26,6 +26,13 @@
             "blurb": "Served as co-captain for the 2023-2024 season. Ran tryouts for over 100 participants. Led practices every week. Competed in tournaments in the NECVL conference. "
         },
         {
+            "entryId": 11,
+            "name": "Memories of a Walk to the Sea",
+            "imgSlugs": ["walksea1.png", "walksea2.png", "walksea3.png", "walksea4.png"],
+            "url": "https://drive.google.com/file/d/1K_2VKySQ5RS5STQ6tmEFeSGxiABQCLTp/view?usp=sharing",
+            "blurb": "2024, Single-Channel Video. Exploring themes of acceptability, performance, given assistance, and minding your own business."
+        },
+        {
             "entryId": 3,
             "name": "Long Jormal",
             "imgSlugs": ["longjormal1.jpg"],
