@@ -23,8 +23,9 @@
             "entryId": 2,
             "name": "MIC Brand Refresh",
             "blurb": "Upon entering the Music Industry at Columbia board as the Design Director, I met with the rest of the board to imagine a brand identity refresh. This club was the brainchild of the current president, so it was very important for me to preserve her passion and mission in the new design guidelines. This invovled creating a set of colors, fonts, and design styles that would work with the themes of the club.",
-            "imgSlugs": ["placeholder.png"],
-            "type": "UI",
+            "imgSlugs": ["mic1.jpg", "mic2.jpg", "mic3.jpg"],
+            "url": "https://www.instagram.com/musicindustrycolumbia/",
+            "type": "Graphic",
             "skills": ["Adobe Illustrator", "Adobe InDesign", "Colors", "Social Media Marketing"]
         },
         {

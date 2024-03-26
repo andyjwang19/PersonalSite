@@ -1,18 +1,71 @@
 {
     "info": {
         "name": "Other",
-        "filters": ["Bartending", "Art", "Other"],
+        "filters": ["Bartending", "Art", "Volleyball"],
         "blurb": "I also work as a freelance bartender, available for private events. I work primarily with the Columbia Bartending Agency, where I was licensed as a Distinguished Bartender, the highest certifcation. I have worked a variety of gigs, at a variety of venues, with a variety of setups. Shown here is some of my favorite gigs, many of which included designing a menu around a theme, and providing accurate shopping lists. If you would like to book me, you can reach out to me through the Contact link. "
     },
     "entries": [
         {
             "entryId": 1,
+            "name": "Process",
+            "imgSlugs": ["process1.jpg", "process2.jpg", "process3.jpg", "artshow1.jpg"],
+            "url": "https://www.instagram.com/p/CyoOoGJADPi/?img_index=1",
+            "blurb": "2023, Oil paint on canvas. In this piece I explore process, disgust, acceptability. Displayed in the Columbia End of Semester Show."
+        },
+        {
+            "entryId": 2,
+            "name": "Pregame Party",
+            "imgSlugs": ["pregame1.jpg"],
+            "url": "https://partiful.com/e/mrtWJjXXkybFs4b1vttt",
+            "blurb": "Hosted an event for 80 people. Constructed a theme and designed a poster, marketed event through word-of-mouth and social media."
+        },
+        {
+            "entryId": 10,
+            "name": "Co-Captain of the Men's Volleyball Club",
+            "imgSlugs": ["vbcaptain.jpg"],
+            "blurb": "Served as co-captain for the 2023-2024 season. Ran tryouts for over 100 participants. Led practices every week. Competed in tournaments in the NECVL conference. "
+        },
+        {
+            "entryId": 3,
+            "name": "Long Jormal",
+            "imgSlugs": ["longjormal1.jpg"],
+            "url": "https://partiful.com/e/120AnZkv8OPdIMdXybpM",
+            "blurb": "Hosted a formal event at a venue downtown. Managed various logistics, including contacting an art gallery venue, hiring bartenders, sourcing bar ingredients, and marketing the event. Sold 65 tickets at $35 each. "
+        },
+        {
+            "entryId": 6,
+            "name": "Afternoon",
+            "imgSlugs": ["afternoon.jpg"],
+            "url": "https://www.instagram.com/p/C0a13tQgFKX/",
+            "blurb": "2023, oil paint on canvas."
+        },
+        {
+            "entryId": 7,
+            "name": "Self Portrait",
+            "imgSlugs": ["selfportrait1.jpg"],
+            "blurb": "2023, oil paint on canvas."
+        },
+
+        {
+            "entryId": 9,
+            "name": "Intermural VB Champs!",
+            "imgSlugs": ["imvb1.jpg"],
+            "blurb": "Led my team to 4th straight playoff appearance, 1st championship title. Rahhhhh!!!"
+        },
+        {
+            "entryId": 8,
+            "name": "untitled",
+            "imgSlugs": ["untitled1.jpg"],
+            "blurb": "2024, oil paint on canvas."
+        },
+        {
+            "entryId": 4,
             "name": "Isha's Birthday Party",
             "imgSlugs": ["placeholder.png"],
             "blurb": "The client wanted a 2000s themed birthday party, complete with 2000s styled drinks. I provided a menu of the most popular and well known drinks from the early 2000s, of which she selected five. I designed the menu in Adobe Illustrator, working with the client's vision. I provided the client with estimates on a complete shopping list for the event, which they purchased and provided. Overall this event was a blast!"
         },
         {
-            "entryId": 2,
+            "entryId": 5,
             "name": "Columbia Kappas-Lambdas Formal",
             "imgSlugs": ["placeholder.png"],
             "blurb": "This event was an example of my drink making speed, having to cater to a large number of guests. The clients wanted a total of four bartenders, and I used my network to call on three fellow bartenders to join. Booking me also gives you access to my network of other capable bartenders."

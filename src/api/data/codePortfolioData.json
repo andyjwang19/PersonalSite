@@ -23,7 +23,7 @@
         {
             "entryId": 1,
             "name": "HotSpot",
-            "blurb": "I built this app from scratch, and from no knowledge of mobile development. From following best React practices learned from The Vendry, alongside numerous online tutorials, I built this using React Native and Expo Go for a final project for UI Design. This app collects suggestions and favorite places from your friends, sorts them based on several metrics before displaying them for the user to scroll through. This app implements ratings, reviews, and location data.",
+            "blurb": "Hotspot is a cross-platform app I designed and implemented. After conducting user interviews and identifying pain points with filtering through venues, I discovered that people really trusted word-of-mouth from friends and acquaintances. Thus, I created this full-stack app that collects reviews for restaurants and other third-spaces from friends and displays them on a map. I designed the layout in Figma, wrote the frontend using React Native, MapView, Expo SDK, and the backend with NodeJS and MySQL. ",
             "url": "https://github.com/andyjwang19/HotSpot",
             "skills": [
                 "React",
@@ -36,12 +36,40 @@
             "imgSlugs": ["hotspotCode_1.png", "hotspotCode_2.png", "hotspotCode_3.png"]
         },
         {
+            "entryId": 7,
+            "name": "Chef Mike's Alert Site",
+            "blurb": "I love the Grandma Sub at one of our University’s Dining halls – Chef Mike’s Sub Shop. It is really quite fantastic – spicy sausage, broccoli rabe, parmesan flakes – all for the low price of one dining swipe. To show my dedication to the cause, and to connect with my other grandma-heads, I built dotheyhavethegrandmasub.com. This site is any grandma-head’s one-stop-shop for all things grandma sub. The website updates each day by scraping our dining website’s menu. This was no easy task, as the dining website is encrypted under CORS protocol, which requires the request to first be sent through a CORS-header proxy. I hosted such a proxy on Heroku. Upon receiving the HTML of the dining website, I parse the JSON data until finding today’s menu, and checking if the grandma sub was on it. This was written in React, Tailwind CSS, Typescript, and uses Axios to send the fetch HTTP request.",
+            "url": "https://www.dotheyhavethegrandmasub.com/",
+            "skills": ["React", "Implementing Design", "Typescript", "Tailwind CSS", "HTML/CSS"],
+            "imgSlugs": ["chefmike1.jpg", "chefmike2.png"]
+        },
+        {
+            "entryId": 8,
+            "name": "Polyphonic Drum Machine",
+            "blurb": "A great love of mine is music. After taking Computational Sound, a class where I learned about sound wave synthesis, plug-in effects, and live coding, I decided to build a project using what I had learned. This is a polyphonic drum machine, which plays each sound track on a different time-signature. This creates really unique sound combinations and environments. This was created using the Javascript WebAudio library, which was a headache to work with as it was just so old. The site was constructed using React, Typescript, and Tailwind CSS. ",
+            "url": "https://main.d2zyhjidm5l1wk.amplifyapp.com/",
+            "skills": ["React", "Implementing Design", "Typescript", "Tailwind CSS", "HTML/CSS"],
+            "imgSlugs": ["dm1.png"]
+        },
+        {
+            "entryId": 9,
+            "name": "Delia's Site",
+            "blurb": "Delia is a tattoo artist based in the UWS of NYC. I worked with her through several design iterations before settling on the design as it exists now. The central menu involves a vinyl disk that slowly spins on screen, with links rotating with it. The site includes her flash sheets, a portfolio, and a booking link where a user can contact her and schedule a tattoo. Currently waiting on her to complete some assets to add to the site before launching. ",
+            "skills": ["React", "Implementing Design", "Typescript", "Tailwind CSS", "HTML/CSS"],
+            "imgSlugs": ["delia1.png", "delia2.png"]
+        },
+        {
             "entryId": 2,
             "name": "Personal Website Frontend",
             "blurb": "This is the website you are currently on! I built this website using React and Typescript. I wanted to learn a new technology as well, so I decided to implement Tailwind CSS for styling. I set up a different node scripts, including a deploy script that automatically builds and publishes the changes onto Git Pages.",
             "url": "https://github.com/andyjwang19/PersonalSite",
             "skills": ["React", "Implementing Design", "Typescript", "Tailwind CSS", "HTML/CSS"],
-            "imgSlugs": ["placeholder.png"]
+            "imgSlugs": [
+                "ps_frontend1.png",
+                "ps_frontend2.png",
+                "ps_frontend3.png",
+                "ps_frontend4.png"
+            ]
         },
         {
             "entryId": 3,

@@ -87,7 +87,7 @@ export default function Portfolio({ name, filters, blurb, data }: PortfolioProps
                     </div>
                     <div className={`flex w-full flex-none gap-4 px-8 sm:flex-col`}>
                         <div
-                            className={`${textStyle} border-1 my-auto ml-auto shrink-0 grow-0 border border-black bg-header-orange px-8 py-6 text-2xl font-black sm:order-last`}
+                            className={`${textStyle} border-1 my-auto ml-auto shrink-0 grow-0 cursor-pointer border border-2 border-black bg-header-orange px-8 py-6 text-2xl font-black transition hover:scale-[1.1] sm:order-last`}
                             onClick={() => {
                                 setCurrentEntry(undefined);
                                 setFilterState([false, false, false]);
