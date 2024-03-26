@@ -29,10 +29,10 @@ function Header() {
             </Link>
             <div className="hidden h-full sm:flex">
                 <Link
-                    className="flex h-full items-center border-r border-black pt-[15px] pb-[15px] pl-[20px] pr-[20px] font-sans text-[32px] font-bold"
+                    className="group flex h-full items-center border-r border-black pt-[15px] pb-[15px] pl-[20px] pr-[20px] font-sans text-[32px] font-bold"
                     to="/resume"
                 >
-                    <div className={` transition hover:scale-[1.2]`}>resume</div>
+                    <div className={` transition group-hover:scale-[1.2]`}>resume</div>
                 </Link>
                 <div className="z-50" onMouseLeave={() => setPortfolioHover(false)}>
                     <div
@@ -75,10 +75,10 @@ function Header() {
                     ) : null}
                 </div>
                 <Link
-                    className="flex h-full items-center pl-[20px] pr-[30px] font-sans text-[32px] font-bold "
+                    className="group flex h-full items-center pl-[20px] pr-[30px] font-sans text-[32px] font-bold "
                     to="/contact"
                 >
-                    <div className="transition hover:scale-[1.2]">contact</div>
+                    <div className="transition group-hover:scale-[1.2]">contact</div>
                 </Link>
             </div>
         </div>
