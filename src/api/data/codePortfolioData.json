@@ -61,7 +61,7 @@
         {
             "entryId": 2,
             "name": "Personal Website Frontend",
-            "blurb": "This is the website you are currently on! I built this website using React and Typescript. I wanted to learn a new technology as well, so I decided to implement Tailwind CSS for styling. I set up a different node scripts, including a deploy script that automatically builds and publishes the changes onto Git Pages.",
+            "blurb": "This is the website you are currently on! I built this website using React, Typescript, and TailwindCSS. I wrote several different node scripts, including a deploy script that automatically builds and publishes the changes to Git Pages. I designed this site on Figma, and created two designs for each page: one for mobile and one for desktop. Using the TailwindCSS breakpoints, I was able to change the design of the site responsively to the window size. ",
             "url": "https://github.com/andyjwang19/PersonalSite",
             "skills": ["React", "Implementing Design", "Typescript", "Tailwind CSS", "HTML/CSS"],
             "imgSlugs": [
@@ -89,7 +89,7 @@
         {
             "entryId": 5,
             "name": "Website Portfolio Engine",
-            "blurb": "This element of my personal website allows me to automate the layout of my portfolios. The different elements are sorted in Small, Medium, and Large based on the length of the blurbs, before the algorithm mixes and matches to form an interesting layout.",
+            "blurb": "I designed this engine to automate the layout of a site, combining differently sized elements. The different elements are sorted in Small, Medium, and Large based on the length of the blurbs, before the algorithm mixes and matches to form an interesting layout. ",
             "skills": ["Algorithm Design", "React", "Typescript", "Tailwind CSS", "HTML/CSS"],
             "imgSlugs": ["placeholder.png"]
         }
