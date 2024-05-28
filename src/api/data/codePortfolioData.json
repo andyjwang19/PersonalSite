@@ -23,7 +23,7 @@
         {
             "entryId": 1,
             "name": "HotSpot",
-            "blurb": "Hotspot is a cross-platform app I designed and implemented. After conducting user interviews and identifying pain points with filtering through venues, I discovered that people really trusted word-of-mouth from friends and acquaintances. Thus, I created this full-stack app that collects reviews for restaurants and other third-spaces from friends and displays them on a map. I designed the layout in Figma, wrote the frontend using React Native, MapView, Expo SDK, and the backend with NodeJS and MySQL. ",
+            "blurb": "Hotspot is a cross-platform app I developed. After conducting user interviews and identifying pain points with filtering through venues, my team and I (shout-out Rachel Michelson, Tejasri V., and Theo M.!) discovered that people really trusted word-of-mouth from friends and acquaintances. Thus, I created this full-stack app that collects reviews for restaurants and other third-spaces from friends and displays them on a map. I wrote the frontend using React Native, MapView, Expo SDK, and the backend with NodeJS and MySQL. ",
             "url": "https://github.com/andyjwang19/HotSpot",
             "skills": [
                 "React",
